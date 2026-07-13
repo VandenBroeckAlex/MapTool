@@ -131,6 +131,8 @@ namespace MapToolV2
             buttonSelectOutputFile = new Button();
             button8 = new Button();
             colorDialog1 = new ColorDialog();
+            comboBox5 = new ComboBox();
+            label18 = new Label();
             TabControleLoad.SuspendLayout();
             groupBox2.SuspendLayout();
             panel4.SuspendLayout();
@@ -176,6 +178,8 @@ namespace MapToolV2
             // groupBox2
             // 
             groupBox2.BackColor = Color.WhiteSmoke;
+            groupBox2.Controls.Add(label18);
+            groupBox2.Controls.Add(comboBox5);
             groupBox2.Controls.Add(panel4);
             groupBox2.Controls.Add(checkBox4);
             groupBox2.Controls.Add(checkBox3);
@@ -1135,6 +1139,23 @@ namespace MapToolV2
             button8.Text = "Export Data";
             button8.UseVisualStyleBackColor = true;
             // 
+            // comboBox5
+            // 
+            comboBox5.FormattingEnabled = true;
+            comboBox5.Location = new Point(72, 355);
+            comboBox5.Name = "comboBox5";
+            comboBox5.Size = new Size(121, 23);
+            comboBox5.TabIndex = 7;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(72, 337);
+            label18.Name = "label18";
+            label18.Size = new Size(85, 15);
+            label18.TabIndex = 8;
+            label18.Text = "Select scenario";
+            // 
             // MapTool
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1280,5 +1301,7 @@ namespace MapToolV2
         private TextBox textBoxOutputFile;
         private Button buttonSelectOutputFile;
         private Button button8;
+        private Label label18;
+        private ComboBox comboBox5;
     }
 }
