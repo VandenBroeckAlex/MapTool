@@ -1,0 +1,19 @@
+{
+  "save_name": "Ma superbe campagne bretonne",
+  "real_timestamp": "2026-07-09T21:40:00Z",
+  
+  "game_state": {
+    "current_turn": 142,
+    "current_date": "1510-05-12",
+    "player_country_id": "BRIT"
+  },
+  
+  "compatibility": {
+    "game_version": "1.0.4",
+    "map_id": "europe_v2",
+    "active_mods": [
+      "more_flags_mod_v1",
+      "historical_immersion_v4"
+    ]
+  }
+}

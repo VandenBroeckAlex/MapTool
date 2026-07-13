@@ -1,0 +1,9 @@
+{
+  "playerId": 1,
+  "name": "France",
+  "color": [12, 35, 142],
+  "treasury": 450000,
+  "income": 12500,
+  "tag": "FRA",
+  "incomeTax": 0.15
+}

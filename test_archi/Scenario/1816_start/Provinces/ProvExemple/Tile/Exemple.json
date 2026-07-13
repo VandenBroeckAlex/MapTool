@@ -1,0 +1,37 @@
+{
+    "LandTile":{
+        "name" : "",
+        "tag" : "",
+        "typeTag" : "",
+        "spriteColor" : "",
+        "neighbors" : "",
+        "superficy" : 0,
+        "isLand" : true,
+        "isPassable" : true,
+        "ownerTag" : "",
+        "occupierTag" : "",
+        "rgoTag" : "",
+        "isCoast" : false,
+        "provinceTag" : "",
+
+
+        "workplaces":[
+            { "type": "castle", "size": 1 },
+            { "type": "farm", "size": 3 }
+        ]
+        
+    },
+     "WaterTile":{
+        "name" : "",
+        "tag" : "",
+        "typeTag" : "",
+        "spriteColor" : "",
+        "neighbors" : "",
+        "superficy" : 0,
+        "isLand" : true,
+        "isPassable" : true
+    }
+
+
+
+}

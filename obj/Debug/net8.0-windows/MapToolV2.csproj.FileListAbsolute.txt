@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\bin\Debug\net8.0-windows\MapToolV2.exe
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\bin\Debug\net8.0-windows\MapToolV2.deps.json
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\bin\Debug\net8.0-windows\MapToolV2.runtimeconfig.json
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\bin\Debug\net8.0-windows\MapToolV2.dll
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\bin\Debug\net8.0-windows\MapToolV2.pdb
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.MapTool.resources
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.csproj.GenerateResource.cache
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.AssemblyInfo.cs
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.dll
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\refint\MapToolV2.dll
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.pdb
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.genruntimeconfig.cache
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\ref\MapToolV2.dll
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.Properties.Resources.resources

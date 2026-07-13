@@ -1,0 +1,14 @@
+{
+    "LandProvince":{
+        "tag" : "",
+        "ownerTag" : "",
+        "name" : "",
+        "isOccupied" : false,
+        "OccupierTag" : ""
+    },
+     "WaterProvince":{
+        "tag" : "",
+        "ownerTag" : "",
+        "name" : ""
+    }
+}
