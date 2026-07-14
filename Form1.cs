@@ -1,3 +1,5 @@
+using MapToolV2.Scripts.Form;
+
 namespace MapToolV2
 {
     public partial class MapTool : Form
@@ -11,6 +13,21 @@ namespace MapToolV2
         {
             folderBrowserDialog.ShowDialog();
             textBoxFileName.Text = folderBrowserDialog.SelectedPath;
+
+            string[] scenarios = ScenarioDiscovery.GetScenarios(folderBrowserDialog.SelectedPath);
+            comboBoxScenario.Items.Clear();
+            if (scenarios.Length > 0)
+            {
+                foreach (string scenario in scenarios)
+                {
+                    comboBoxScenario.Items.Add(scenario);
+                }
+            }
+            else
+            {
+                comboBoxScenario.Items.Add("No scenario found");
+            }
+            comboBoxScenario.SelectedIndex = 0;
         }
 
         private void CheckBoxGetNeighbore_CheckedChanged(object sender, EventArgs e)

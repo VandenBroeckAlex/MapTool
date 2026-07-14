@@ -23,4 +23,10 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Scripts\DTO\" />
+    <Folder Include="Scripts\Form\NewFolder\" />
+    <Folder Include="Scripts\Loader\Strategies\" />
+  </ItemGroup>
+
 </Project>
