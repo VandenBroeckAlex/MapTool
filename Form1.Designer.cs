@@ -32,12 +32,13 @@ namespace MapToolV2
             TabControleStaticData = new TabPage();
             TabControleLoad = new TabPage();
             groupBox2 = new GroupBox();
+            btnCompute = new Button();
             label18 = new Label();
             comboBoxScenario = new ComboBox();
             panel4 = new Panel();
-            radioButtonSurfaceDefault = new RadioButton();
+            radioBtnSurfaceDefault = new RadioButton();
             checkBoxComputeSurface = new CheckBox();
-            radioButtonSurfaceAll = new RadioButton();
+            radioBtnSurfaceAll = new RadioButton();
             checkBox4 = new CheckBox();
             checkBox3 = new CheckBox();
             panel2 = new Panel();
@@ -45,6 +46,8 @@ namespace MapToolV2
             checkBoxComputePivot = new CheckBox();
             radioPivotAll = new RadioButton();
             panel1 = new Panel();
+            checkBoxTopBottom = new CheckBox();
+            checkBoxRightLeft = new CheckBox();
             radioNeighboreDefault = new RadioButton();
             checkBoxGetNeighbore = new CheckBox();
             radioNeighboreAll = new RadioButton();
@@ -178,6 +181,7 @@ namespace MapToolV2
             // groupBox2
             // 
             groupBox2.BackColor = Color.WhiteSmoke;
+            groupBox2.Controls.Add(btnCompute);
             groupBox2.Controls.Add(label18);
             groupBox2.Controls.Add(comboBoxScenario);
             groupBox2.Controls.Add(panel4);
@@ -187,15 +191,24 @@ namespace MapToolV2
             groupBox2.Controls.Add(panel1);
             groupBox2.Location = new Point(19, 124);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(292, 396);
+            groupBox2.Size = new Size(539, 384);
             groupBox2.TabIndex = 4;
             groupBox2.TabStop = false;
             groupBox2.Text = "Loading Options";
             // 
+            // btnCompute
+            // 
+            btnCompute.Location = new Point(172, 348);
+            btnCompute.Name = "btnCompute";
+            btnCompute.Size = new Size(75, 23);
+            btnCompute.TabIndex = 9;
+            btnCompute.Text = "Compute";
+            btnCompute.UseVisualStyleBackColor = true;
+            // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.Location = new Point(72, 337);
+            label18.Location = new Point(16, 330);
             label18.Name = "label18";
             label18.Size = new Size(85, 15);
             label18.TabIndex = 8;
@@ -204,7 +217,7 @@ namespace MapToolV2
             // comboBoxScenario
             // 
             comboBoxScenario.FormattingEnabled = true;
-            comboBoxScenario.Location = new Point(72, 355);
+            comboBoxScenario.Location = new Point(16, 348);
             comboBoxScenario.Name = "comboBoxScenario";
             comboBoxScenario.Size = new Size(121, 23);
             comboBoxScenario.TabIndex = 7;
@@ -213,25 +226,25 @@ namespace MapToolV2
             // 
             panel4.BackColor = Color.White;
             panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Controls.Add(radioButtonSurfaceDefault);
+            panel4.Controls.Add(radioBtnSurfaceDefault);
             panel4.Controls.Add(checkBoxComputeSurface);
-            panel4.Controls.Add(radioButtonSurfaceAll);
+            panel4.Controls.Add(radioBtnSurfaceAll);
             panel4.Location = new Point(16, 170);
             panel4.Name = "panel4";
-            panel4.Size = new Size(231, 68);
+            panel4.Size = new Size(380, 68);
             panel4.TabIndex = 5;
             // 
-            // radioButtonSurfaceDefault
+            // radioBtnSurfaceDefault
             // 
-            radioButtonSurfaceDefault.AutoSize = true;
-            radioButtonSurfaceDefault.Enabled = false;
-            radioButtonSurfaceDefault.Location = new Point(75, 37);
-            radioButtonSurfaceDefault.Name = "radioButtonSurfaceDefault";
-            radioButtonSurfaceDefault.Size = new Size(90, 19);
-            radioButtonSurfaceDefault.TabIndex = 2;
-            radioButtonSurfaceDefault.TabStop = true;
-            radioButtonSurfaceDefault.Text = "Only default";
-            radioButtonSurfaceDefault.UseVisualStyleBackColor = true;
+            radioBtnSurfaceDefault.AutoSize = true;
+            radioBtnSurfaceDefault.Enabled = false;
+            radioBtnSurfaceDefault.Location = new Point(75, 37);
+            radioBtnSurfaceDefault.Name = "radioBtnSurfaceDefault";
+            radioBtnSurfaceDefault.Size = new Size(90, 19);
+            radioBtnSurfaceDefault.TabIndex = 2;
+            radioBtnSurfaceDefault.TabStop = true;
+            radioBtnSurfaceDefault.Text = "Only default";
+            radioBtnSurfaceDefault.UseVisualStyleBackColor = true;
             // 
             // checkBoxComputeSurface
             // 
@@ -242,18 +255,19 @@ namespace MapToolV2
             checkBoxComputeSurface.TabIndex = 0;
             checkBoxComputeSurface.Text = "Compute Surface";
             checkBoxComputeSurface.UseVisualStyleBackColor = true;
+            checkBoxComputeSurface.CheckedChanged += checkBoxComputeSurface_CheckedChanged;
             // 
-            // radioButtonSurfaceAll
+            // radioBtnSurfaceAll
             // 
-            radioButtonSurfaceAll.AutoSize = true;
-            radioButtonSurfaceAll.Enabled = false;
-            radioButtonSurfaceAll.Location = new Point(30, 38);
-            radioButtonSurfaceAll.Name = "radioButtonSurfaceAll";
-            radioButtonSurfaceAll.Size = new Size(39, 19);
-            radioButtonSurfaceAll.TabIndex = 1;
-            radioButtonSurfaceAll.TabStop = true;
-            radioButtonSurfaceAll.Text = "All";
-            radioButtonSurfaceAll.UseVisualStyleBackColor = true;
+            radioBtnSurfaceAll.AutoSize = true;
+            radioBtnSurfaceAll.Enabled = false;
+            radioBtnSurfaceAll.Location = new Point(30, 38);
+            radioBtnSurfaceAll.Name = "radioBtnSurfaceAll";
+            radioBtnSurfaceAll.Size = new Size(39, 19);
+            radioBtnSurfaceAll.TabIndex = 1;
+            radioBtnSurfaceAll.TabStop = true;
+            radioBtnSurfaceAll.Text = "All";
+            radioBtnSurfaceAll.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
@@ -284,7 +298,7 @@ namespace MapToolV2
             panel2.Controls.Add(radioPivotAll);
             panel2.Location = new Point(16, 96);
             panel2.Name = "panel2";
-            panel2.Size = new Size(231, 68);
+            panel2.Size = new Size(380, 68);
             panel2.TabIndex = 4;
             // 
             // radioPivotDefault
@@ -308,7 +322,7 @@ namespace MapToolV2
             checkBoxComputePivot.TabIndex = 0;
             checkBoxComputePivot.Text = "Compute Pivot";
             checkBoxComputePivot.UseVisualStyleBackColor = true;
-            checkBoxComputePivot.CheckedChanged += checkBoxComputePivot_CheckedChanged;
+            checkBoxComputePivot.CheckedChanged += CheckBoxComputePivot_CheckedChanged;
             // 
             // radioPivotAll
             // 
@@ -326,13 +340,37 @@ namespace MapToolV2
             // 
             panel1.BackColor = Color.White;
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(checkBoxTopBottom);
+            panel1.Controls.Add(checkBoxRightLeft);
             panel1.Controls.Add(radioNeighboreDefault);
             panel1.Controls.Add(checkBoxGetNeighbore);
             panel1.Controls.Add(radioNeighboreAll);
             panel1.Location = new Point(16, 22);
             panel1.Name = "panel1";
-            panel1.Size = new Size(231, 68);
+            panel1.Size = new Size(380, 68);
             panel1.TabIndex = 3;
+            // 
+            // checkBoxTopBottom
+            // 
+            checkBoxTopBottom.AutoSize = true;
+            checkBoxTopBottom.Enabled = false;
+            checkBoxTopBottom.Location = new Point(207, 37);
+            checkBoxTopBottom.Name = "checkBoxTopBottom";
+            checkBoxTopBottom.Size = new Size(135, 19);
+            checkBoxTopBottom.TabIndex = 4;
+            checkBoxTopBottom.Text = "Link top and bottom";
+            checkBoxTopBottom.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxRightLeft
+            // 
+            checkBoxRightLeft.AutoSize = true;
+            checkBoxRightLeft.Enabled = false;
+            checkBoxRightLeft.Location = new Point(209, 12);
+            checkBoxRightLeft.Name = "checkBoxRightLeft";
+            checkBoxRightLeft.Size = new Size(125, 19);
+            checkBoxRightLeft.TabIndex = 3;
+            checkBoxRightLeft.Text = "Link Right and Left";
+            checkBoxRightLeft.UseVisualStyleBackColor = true;
             // 
             // radioNeighboreDefault
             // 
@@ -1039,7 +1077,6 @@ namespace MapToolV2
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(119, 23);
             textBox4.TabIndex = 7;
-            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label8
             // 
@@ -1246,9 +1283,9 @@ namespace MapToolV2
         private Label label7;
         private Label label6;
         private Panel panel4;
-        private RadioButton radioButtonSurfaceDefault;
+        private RadioButton radioBtnSurfaceDefault;
         private CheckBox checkBoxComputeSurface;
-        private RadioButton radioButtonSurfaceAll;
+        private RadioButton radioBtnSurfaceAll;
         private Button button3;
         private Label label14;
         private TextBox textBox7;
@@ -1303,5 +1340,8 @@ namespace MapToolV2
         private Button button8;
         private Label label18;
         private ComboBox comboBoxScenario;
+        private Button btnCompute;
+        private CheckBox checkBoxTopBottom;
+        private CheckBox checkBoxRightLeft;
     }
 }

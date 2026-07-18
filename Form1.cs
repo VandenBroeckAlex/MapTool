@@ -37,15 +37,19 @@ namespace MapToolV2
                 //Enable
                 radioNeighboreAll.Enabled = true;
                 radioNeighboreDefault.Enabled = true;
+                checkBoxTopBottom.Enabled = true;
+                checkBoxRightLeft.Enabled = true;
             }
             else
             {
                 radioNeighboreAll.Enabled = false;
                 radioNeighboreDefault.Enabled = false;
+                checkBoxTopBottom.Enabled = false;
+                checkBoxRightLeft.Enabled = false;
             }
         }
 
-        private void checkBoxComputePivot_CheckedChanged(object sender, EventArgs e)
+        private void CheckBoxComputePivot_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxComputePivot.Checked)
             {
@@ -60,10 +64,6 @@ namespace MapToolV2
             }
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -74,6 +74,21 @@ namespace MapToolV2
         {
             folderBrowserDialog.ShowDialog();
             textBoxOutputFile.Text = folderBrowserDialog.SelectedPath;
+        }
+
+        private void checkBoxComputeSurface_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxComputeSurface.Checked)
+            {
+                //Enable
+                radioBtnSurfaceAll.Enabled = true;
+                radioBtnSurfaceDefault.Enabled = true;
+            }
+            else
+            {
+                radioBtnSurfaceAll.Enabled = false;
+                radioBtnSurfaceDefault.Enabled = false;    
+            }
         }
     }
 }

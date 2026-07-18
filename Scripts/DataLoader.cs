@@ -2,7 +2,7 @@ using MapToolV2.Scripts.Interface;
 
 namespace MapToolV2.Scripts
 {
-    // The Product: Now safely immutable
+ 
     public class DataLoader
     {
         
@@ -34,6 +34,10 @@ namespace MapToolV2.Scripts
         public IComputeNeighbore computeNeighbor { get; }
         public IComputePivot computePivot { get; }
         public IComputeSurface computeSurface { get; }
+
+
+
+
     }
 
     // The Builder
@@ -100,4 +104,6 @@ namespace MapToolV2.Scripts
             );
         }
     }
+
+
 }

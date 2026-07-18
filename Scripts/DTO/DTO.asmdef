@@ -1,0 +1,17 @@
+{
+    "name": "DTO",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e9a602c551904cb45afc7710f130d840",
+        "GUID:e2b7932a83406e44cafbe715a628ce58"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
