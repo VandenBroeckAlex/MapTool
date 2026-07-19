@@ -204,6 +204,7 @@ namespace MapToolV2
             btnCompute.TabIndex = 9;
             btnCompute.Text = "Compute";
             btnCompute.UseVisualStyleBackColor = true;
+            btnCompute.Click += btnCompute_Click;
             // 
             // label18
             // 
@@ -356,9 +357,9 @@ namespace MapToolV2
             checkBoxTopBottom.Enabled = false;
             checkBoxTopBottom.Location = new Point(207, 37);
             checkBoxTopBottom.Name = "checkBoxTopBottom";
-            checkBoxTopBottom.Size = new Size(135, 19);
+            checkBoxTopBottom.Size = new Size(141, 19);
             checkBoxTopBottom.TabIndex = 4;
-            checkBoxTopBottom.Text = "Link top and bottom";
+            checkBoxTopBottom.Text = "Wrap top and bottom";
             checkBoxTopBottom.UseVisualStyleBackColor = true;
             // 
             // checkBoxRightLeft
@@ -367,9 +368,9 @@ namespace MapToolV2
             checkBoxRightLeft.Enabled = false;
             checkBoxRightLeft.Location = new Point(209, 12);
             checkBoxRightLeft.Name = "checkBoxRightLeft";
-            checkBoxRightLeft.Size = new Size(125, 19);
+            checkBoxRightLeft.Size = new Size(131, 19);
             checkBoxRightLeft.TabIndex = 3;
-            checkBoxRightLeft.Text = "Link Right and Left";
+            checkBoxRightLeft.Text = "Wrap Right and Left";
             checkBoxRightLeft.UseVisualStyleBackColor = true;
             // 
             // radioNeighboreDefault

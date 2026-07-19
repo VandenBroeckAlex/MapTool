@@ -9,7 +9,7 @@ namespace A_VDB.Definition
         public int weight; // For transport, if needed
         public float baseProductionModdifier;
         //public string iconPath;
-        public int type;
+        public string type;
         public string color;
     }
 }

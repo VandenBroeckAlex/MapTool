@@ -1,4 +1,5 @@
 using MapToolV2.Scripts.Form;
+using MapToolV2.Scripts.Loader;
 
 namespace MapToolV2
 {
@@ -87,8 +88,22 @@ namespace MapToolV2
             else
             {
                 radioBtnSurfaceAll.Enabled = false;
-                radioBtnSurfaceDefault.Enabled = false;    
+                radioBtnSurfaceDefault.Enabled = false;
             }
+        }
+
+        private void btnCompute_Click(object sender, EventArgs e)
+        {
+            //Load
+            string fileRoot = textBoxFileName.Text;
+            string scenarioName = comboBoxScenario.Text;
+            DeserializerBootstrap deserializer = new DeserializerBootstrap(fileRoot,scenarioName);
+
+            deserializer.Deserialize();
+            //Compute
+
+            //RefreshView
+
         }
     }
 }

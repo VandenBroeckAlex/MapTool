@@ -1,32 +1,7 @@
 {
-  "size": 15000,
-  "workplace": [
-    {
-      "id": 101,
-      "num": 42
-    },
-    {
-      "id": 102,
-      "num": 7
-    }
-  ],
-  "GoodRequirement": [
-    {
-      "goodType": "Grain",
-      "amountNeeded": 150,
-      "isFulfilled": true
-    },
-    {
-      "goodType": "Clothes",
-      "amountNeeded": 50,
-      "isFulfilled": false
-    }
-  ],
-  "provinceTag": "PRV_PARIS_01",
-  "countryTag": "FRA",
-  "job": "Farmer",
-  "culture": "French",
-  "religion": "Catholic",
-  "cashAmount": 1250,
-  "savings": 5400
+  "tag": "PRV_PARIS_01",
+  "ownerTag": "FRA",
+  "name" : "Ile-de-France",
+  "isOccupied" : false,
+  "occupierTag" : ""
 }

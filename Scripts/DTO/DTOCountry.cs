@@ -2,7 +2,7 @@ namespace A_VDB.Definition
 {
     public class DTOCountry
     {
-        public int playerId;
+        public int? playerId;
         public string name;
         public int[] color;
         public int treasury;

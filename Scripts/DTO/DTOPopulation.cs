@@ -15,3 +15,8 @@ using System.Collections.Generic;
         public int savings;
     }
 
+    public class IdNum
+{
+    public int id;
+    public int num;
+}

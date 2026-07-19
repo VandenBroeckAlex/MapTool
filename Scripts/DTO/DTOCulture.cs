@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MapToolV2.Scripts.Interface
+namespace MapToolV2.Scripts
 {
-    public interface IComputeNeighbore
+    public class DTOCulture
     {
-        void Compute();
+        public string tag;
+        public string name;
     }
 }

@@ -3,6 +3,46 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\loader\\deserializers\\datadeserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\loader\\deserializers\\datadeserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\dto\\dtotile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtotile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\dto\\dtoworkplaceinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtoworkplaceinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\loader\\deserializerbootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\loader\\deserializerbootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\dto\\dtocountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtocountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\dto\\dtoworkplacetemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtoworkplacetemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\dto\\defgood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\defgood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\dto\\dtopopulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtopopulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\dto\\dtostrataneed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtostrataneed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +55,12 @@
       "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\dto\\dtocountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtocountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\dto\\dtoprovince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtoprovince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\interface\\icomputeneighbore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\interface\\icomputeneighbore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\form\\scenariodiscovery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,18 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\maptoolv2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:maptoolv2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\interface\\icomputeneighbore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\interface\\icomputeneighbore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\interface\\icomputepivot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\interface\\icomputepivot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\user\\desktop\\map_game_info\\tool\\maptoolv2\\scripts\\interface\\icomputesurface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,8 +86,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DTOCountry.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOCountry.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOCountry.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOCountry.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOCountry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-19T19:50:07.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DefGood.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DefGood.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DefGood.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DefGood.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DefGood.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-19T19:45:25.543Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -74,83 +128,163 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DTOProvince.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOProvince.cs",
-              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOProvince.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOProvince.cs",
-              "RelativeToolTip": "Scripts\\DTO\\DTOProvince.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "DTOPopulation.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOPopulation.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOPopulation.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOPopulation.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOPopulation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T15:34:24.029Z",
+              "WhenOpened": "2026-07-19T19:30:00.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DTOTile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOTile.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOTile.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOTile.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOTile.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-19T14:13:15.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DTOWorkplaceTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOWorkplaceTemplate.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOWorkplaceTemplate.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOWorkplaceTemplate.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOWorkplaceTemplate.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA4wBgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-19T11:46:07.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DTOWorkplaceInstance.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOWorkplaceInstance.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOWorkplaceInstance.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOWorkplaceInstance.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOWorkplaceInstance.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-19T11:45:21.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataDeserializer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Loader\\Deserializers\\DataDeserializer.cs",
+              "RelativeDocumentMoniker": "Scripts\\Loader\\Deserializers\\DataDeserializer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Loader\\Deserializers\\DataDeserializer.cs",
+              "RelativeToolTip": "Scripts\\Loader\\Deserializers\\DataDeserializer.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAqwG0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-19T10:31:59.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DTOCountry.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOCountry.cs",
-              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOCountry.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOCountry.cs",
-              "RelativeToolTip": "Scripts\\DTO\\DTOCountry.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DeserializerBootstrap.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Loader\\DeserializerBootstrap.cs",
+              "RelativeDocumentMoniker": "Scripts\\Loader\\DeserializerBootstrap.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Loader\\DeserializerBootstrap.cs",
+              "RelativeToolTip": "Scripts\\Loader\\DeserializerBootstrap.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAwE4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-18T15:34:05.38Z",
+              "WhenOpened": "2026-07-19T10:16:58.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IComputePivot.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Interface\\IComputePivot.cs",
-              "RelativeDocumentMoniker": "Scripts\\Interface\\IComputePivot.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Interface\\IComputePivot.cs",
-              "RelativeToolTip": "Scripts\\Interface\\IComputePivot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T19:10:41.691Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "IComputeNeighbore.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Interface\\IComputeNeighbore.cs",
-              "RelativeDocumentMoniker": "Scripts\\Interface\\IComputeNeighbore.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Interface\\IComputeNeighbore.cs",
-              "RelativeToolTip": "Scripts\\Interface\\IComputeNeighbore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Title": "DTOStrataNeed.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOStrataNeed.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOStrataNeed.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOStrataNeed.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOStrataNeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T19:10:10.825Z"
+              "WhenOpened": "2026-07-19T19:32:04.882Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAGUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T12:07:28.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "DataLoader.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DataLoader.cs",
               "RelativeDocumentMoniker": "Scripts\\DataLoader.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DataLoader.cs",
               "RelativeToolTip": "Scripts\\DataLoader.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwGsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwCYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-14T19:00:16.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "Registery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Registery.cs",
               "RelativeDocumentMoniker": "Scripts\\Registery.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Registery.cs",
               "RelativeToolTip": "Scripts\\Registery.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-14T18:58:52.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
+              "Title": "DTOProvince.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOProvince.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOProvince.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\DTO\\DTOProvince.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOProvince.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-18T15:34:24.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IComputeNeighbore.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Interface\\IComputeNeighbore.cs",
+              "RelativeDocumentMoniker": "Scripts\\Interface\\IComputeNeighbore.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Interface\\IComputeNeighbore.cs",
+              "RelativeToolTip": "Scripts\\Interface\\IComputeNeighbore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T19:10:10.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Test.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Test.cs",
               "RelativeDocumentMoniker": "Scripts\\Test.cs",
@@ -162,46 +296,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MapToolV2.csproj",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\MapToolV2.csproj",
-              "RelativeDocumentMoniker": "MapToolV2.csproj",
-              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\MapToolV2.csproj",
-              "RelativeToolTip": "MapToolV2.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-14T18:56:45.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAowFkAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T12:07:28.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAACoEAAAAAAAAAAD4vzYEAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAD4vxYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-12T11:26:17.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "ScenarioDiscovery.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Form\\ScenarioDiscovery.cs",
               "RelativeDocumentMoniker": "Scripts\\Form\\ScenarioDiscovery.cs",
@@ -209,12 +317,11 @@
               "RelativeToolTip": "Scripts\\Form\\ScenarioDiscovery.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T19:31:44.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-14T19:31:44.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "IComputeSurface.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Scripts\\Interface\\IComputeSurface.cs",
               "RelativeDocumentMoniker": "Scripts\\Interface\\IComputeSurface.cs",
@@ -223,6 +330,39 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-14T19:10:57.407Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "632910a4-0733-4c34-988d-013523ff6c2c",
+        "Display": 1,
+        "X": 229,
+        "Y": 164,
+        "Width": 1308,
+        "Height": 757,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\MapToolV2\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-19T09:56:05.18Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

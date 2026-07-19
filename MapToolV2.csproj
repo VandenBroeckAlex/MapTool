@@ -24,9 +24,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Scripts\DTO\" />
     <Folder Include="Scripts\Form\NewFolder\" />
-    <Folder Include="Scripts\Loader\Strategies\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
 </Project>

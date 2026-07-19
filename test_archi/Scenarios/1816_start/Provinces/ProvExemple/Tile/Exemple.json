@@ -1,37 +1,17 @@
 {
-    "LandTile":{
-        "name" : "",
-        "tag" : "",
-        "typeTag" : "",
-        "spriteColor" : "",
-        "neighbors" : "",
-        "superficy" : 0,
-        "isLand" : true,
-        "isPassable" : true,
-        "ownerTag" : "",
-        "occupierTag" : "",
-        "rgoTag" : "",
-        "isCoast" : false,
-        "provinceTag" : "",
+    "tag": "tile_001",
+    "name": "Graslands Alpha",
+    "typeTag": "plains",
+    "spriteColor": "#4CAF50",
+    "neighbors": [2, 3, 4],
+    "superficy": 120,
+    "isLand": true,
+    "isPassable": true,
+    "ownerTag": "faction_france",
+    "occupierTag": "faction_france",
+    "rgoTag": "rgo_wheat",
+    "isCoast": false,
+    "climatTag": "temperate",
+    "provinceTag": "prov_bretagne"
 
-
-        "workplaces":[
-            { "type": "castle", "size": 1 },
-            { "type": "farm", "size": 3 }
-        ]
-        
-    },
-     "WaterTile":{
-        "name" : "",
-        "tag" : "",
-        "typeTag" : "",
-        "spriteColor" : "",
-        "neighbors" : "",
-        "superficy" : 0,
-        "isLand" : true,
-        "isPassable" : true
-    }
-
-
-
-}
+  }

@@ -1,3 +1,4 @@
+using MapToolV2.Scripts.DTO;
 using System.Collections.Generic;
 
 
@@ -9,7 +10,7 @@ public class DTOTile
         public string name;
         public string typeTag;
         public string spriteColor;
-        public int[] neighbors;
+        public int[] neighbors = System.Array.Empty<int>();
         public int superficy;
         public bool isLand;
         public bool isPassable;
@@ -26,5 +27,6 @@ public class DTOTile
         public bool isCoast;
         public string climatTag;
         public string provinceTag;
+        public List<DTOWorkplaceInstance>? workplaces = new List<DTOWorkplaceInstance>();
     }
 }
