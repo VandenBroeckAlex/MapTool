@@ -1,0 +1,459 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\generators\\mapanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\generators\\mapanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\loader\\deserializerbootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\loader\\deserializerbootstrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\registery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\registery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\generators\\createroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\generators\\createroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\loader\\stringpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\loader\\stringpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\form\\traces\\tracedeserialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\form\\traces\\tracedeserialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\dto\\defgood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\defgood.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\form\\traces\\ideserializetrace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\form\\traces\\ideserializetrace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\dto\\dtoworkplacetemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtoworkplacetemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\loader\\deserializers\\datadeserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\loader\\deserializers\\datadeserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\dto\\dtotile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtotile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\dto\\dtoworkplaceinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtoworkplaceinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\dto\\dtocountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtocountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\dto\\dtopopulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtopopulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\dto\\dtostrataneed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtostrataneed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\dto\\dtoprovince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\dto\\dtoprovince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\interface\\icomputeneighbore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\interface\\icomputeneighbore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\form\\scenariodiscovery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\form\\scenariodiscovery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\interface\\icomputesurface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\interface\\icomputesurface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|c:\\users\\alex.vdbroeck\\documents\\devalex\\maptool\\scripts\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A69FCC-C42E-4191-A49D-565DBDD6BFE5}|MapToolV2.csproj|solutionrelative:scripts\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateRoot.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Generators\\CreateRoot.cs",
+              "RelativeDocumentMoniker": "Scripts\\Generators\\CreateRoot.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Generators\\CreateRoot.cs",
+              "RelativeToolTip": "Scripts\\Generators\\CreateRoot.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T13:53:08.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StringPath.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Loader\\StringPath.cs",
+              "RelativeDocumentMoniker": "Scripts\\Loader\\StringPath.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Loader\\StringPath.cs",
+              "RelativeToolTip": "Scripts\\Loader\\StringPath.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T13:50:48.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TraceDeserialize.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Form\\Traces\\TraceDeserialize.cs",
+              "RelativeDocumentMoniker": "Scripts\\Form\\Traces\\TraceDeserialize.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Form\\Traces\\TraceDeserialize.cs",
+              "RelativeToolTip": "Scripts\\Form\\Traces\\TraceDeserialize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T12:07:07.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAUwHAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAOEEAAAAAAAAAAASwAIFAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Registery.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Registery.cs",
+              "RelativeDocumentMoniker": "Scripts\\Registery.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Registery.cs",
+              "RelativeToolTip": "Scripts\\Registery.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeserializerBootstrap.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Loader\\DeserializerBootstrap.cs",
+              "RelativeDocumentMoniker": "Scripts\\Loader\\DeserializerBootstrap.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Loader\\DeserializerBootstrap.cs",
+              "RelativeToolTip": "Scripts\\Loader\\DeserializerBootstrap.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAcwCcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DefGood.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DefGood.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DefGood.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DefGood.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DefGood.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataLoader.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DataLoader.cs",
+              "RelativeDocumentMoniker": "Scripts\\DataLoader.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DataLoader.cs",
+              "RelativeToolTip": "Scripts\\DataLoader.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAUwCgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IDeserializeTrace.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Form\\Traces\\IDeserializeTrace.cs",
+              "RelativeDocumentMoniker": "Scripts\\Form\\Traces\\IDeserializeTrace.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Form\\Traces\\IDeserializeTrace.cs",
+              "RelativeToolTip": "Scripts\\Form\\Traces\\IDeserializeTrace.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T12:04:35.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DTOWorkplaceTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOWorkplaceTemplate.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOWorkplaceTemplate.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOWorkplaceTemplate.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOWorkplaceTemplate.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA2wBgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DataDeserializer.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Loader\\Deserializers\\DataDeserializer.cs",
+              "RelativeDocumentMoniker": "Scripts\\Loader\\Deserializers\\DataDeserializer.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Loader\\Deserializers\\DataDeserializer.cs",
+              "RelativeToolTip": "Scripts\\Loader\\Deserializers\\DataDeserializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DTOWorkplaceInstance.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOWorkplaceInstance.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOWorkplaceInstance.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOWorkplaceInstance.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOWorkplaceInstance.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DTOTile.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOTile.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOTile.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOTile.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOTile.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DTOPopulation.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOPopulation.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOPopulation.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOPopulation.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOPopulation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DTOCountry.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOCountry.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOCountry.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOCountry.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOCountry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DTOStrataNeed.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOStrataNeed.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOStrataNeed.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOStrataNeed.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOStrataNeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DTOProvince.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOProvince.cs",
+              "RelativeDocumentMoniker": "Scripts\\DTO\\DTOProvince.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\DTO\\DTOProvince.cs",
+              "RelativeToolTip": "Scripts\\DTO\\DTOProvince.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IComputeNeighbore.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Interface\\IComputeNeighbore.cs",
+              "RelativeDocumentMoniker": "Scripts\\Interface\\IComputeNeighbore.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Interface\\IComputeNeighbore.cs",
+              "RelativeToolTip": "Scripts\\Interface\\IComputeNeighbore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Test.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Test.cs",
+              "RelativeDocumentMoniker": "Scripts\\Test.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Test.cs",
+              "RelativeToolTip": "Scripts\\Test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ScenarioDiscovery.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Form\\ScenarioDiscovery.cs",
+              "RelativeDocumentMoniker": "Scripts\\Form\\ScenarioDiscovery.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Form\\ScenarioDiscovery.cs",
+              "RelativeToolTip": "Scripts\\Form\\ScenarioDiscovery.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IComputeSurface.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Interface\\IComputeSurface.cs",
+              "RelativeDocumentMoniker": "Scripts\\Interface\\IComputeSurface.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Interface\\IComputeSurface.cs",
+              "RelativeToolTip": "Scripts\\Interface\\IComputeSurface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T10:03:45.789Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "1d1d1b3d-c167-46d6-b0da-fc4f1aaa04d6",
+        "Display": 1,
+        "X": 153,
+        "Y": 135,
+        "Width": 1178,
+        "Height": 1305,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T14:48:26.097Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "2cb05c61-8dac-4547-9b84-f485c0a264bc",
+        "Display": 1,
+        "X": 792,
+        "Y": 331,
+        "Width": 1178,
+        "Height": 1305,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MapAnalyzer.cs",
+              "DocumentMoniker": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Generators\\MapAnalyzer.cs",
+              "RelativeDocumentMoniker": "Scripts\\Generators\\MapAnalyzer.cs",
+              "ToolTip": "C:\\Users\\alex.vdbroeck\\Documents\\DevAlex\\MapTool\\Scripts\\Generators\\MapAnalyzer.cs",
+              "RelativeToolTip": "Scripts\\Generators\\MapAnalyzer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T14:46:34.177Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

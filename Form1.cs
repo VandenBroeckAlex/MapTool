@@ -1,4 +1,7 @@
+using MapAnalysis;
 using MapToolV2.Scripts.Form;
+using MapToolV2.Scripts.Form.Traces;
+using MapToolV2.Scripts.Generators;
 using MapToolV2.Scripts.Loader;
 
 namespace MapToolV2
@@ -97,12 +100,31 @@ namespace MapToolV2
             //Load
             string fileRoot = textBoxFileName.Text;
             string scenarioName = comboBoxScenario.Text;
-            DeserializerBootstrap deserializer = new DeserializerBootstrap(fileRoot,scenarioName);
+            DeserializerBootstrap deserializer = new DeserializerBootstrap(fileRoot, scenarioName);
+            IDeserializeTrace trace = new TraceDeserialize(TbTrace);
+            deserializer.Deserialize(trace);
 
-            deserializer.Deserialize();
+
+            bool horizontal = checkBoxRightLeft.Checked;
+            bool vertical = checkBoxTopBottom.Checked;
+            MapAnalysisResult mapResult = MapAnalyzer.Analyze(Path.Combine(fileRoot, "Province_Map.png"), horizontal, vertical);
             //Compute
 
+            trace.Log($"number of detected color: {mapResult.Colors.Count()}", MesssageType.info);
+
             //RefreshView
+
+        }
+
+        private void btnCreateroot_Click(object sender, EventArgs e)
+        {
+            string root = textBoxOutputFile.Text;
+
+            if(root != "")
+            {
+              CreateRoot cr = new CreateRoot(root);
+              cr.Create();
+            }
 
         }
     }

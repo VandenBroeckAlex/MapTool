@@ -1,8 +1,10 @@
 using MapToolV2.Scripts.DTO;
+using MapToolV2.Scripts.Form.Traces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Security.Principal;
 using System.Text.Json;
@@ -100,14 +102,15 @@ namespace MapToolV2.Scripts.Loader.Deserializers
     
 
 
-    public static DeserializerBootstrap LoadProvincesData(string path, DeserializerBootstrap bootstrap)
+    public static DeserializerBootstrap LoadProvincesData(string path, DeserializerBootstrap bootstrap, IDeserializeTrace trace)
     {
             //Chemin du scénario
             string[] directories = Directory.GetDirectories(Path.Combine(path,"Provinces"));
-            
+            trace.Log($"Deserializing: Scenario", MesssageType.info);
             //Pour chaque fichier
             foreach (string d in directories)
             {
+                trace.Log($"Entering {d}", MesssageType.info);
                 string folderName = Path.GetFileName(d);
                 if (folderName != "ZZZ_OrphanTiles")
                 {
@@ -117,6 +120,7 @@ namespace MapToolV2.Scripts.Loader.Deserializers
                     string provinceJsonPath = Path.Combine(d, "Province.json");
                     if (!File.Exists(provinceJsonPath))
                     {
+                        trace.Log($" file missing at: {provinceJsonPath}", MesssageType.error);
                         throw new FileNotFoundException($" file missing at: {provinceJsonPath}");
                     }
                     //Deserialize Province
@@ -130,6 +134,7 @@ namespace MapToolV2.Scripts.Loader.Deserializers
                     string popJsonPath = Path.Combine(d, "Population.json");
                     if (!File.Exists(popJsonPath))
                     {
+                        trace.Log($" file missing at: {provinceJsonPath}", MesssageType.error);
                         throw new FileNotFoundException($" file missing at: {popJsonPath}");
                     }
                     List<DTOPopulation> poplist = LoadObjectFromJson<List<DTOPopulation>>(popJsonPath);
@@ -138,6 +143,7 @@ namespace MapToolV2.Scripts.Loader.Deserializers
                     string workplaceJsonPath = Path.Combine(d, "Workplaces.json");
                     if (!File.Exists(workplaceJsonPath))
                     {
+                        trace.Log($" file missing at: {workplaceJsonPath}", MesssageType.error);
                         throw new FileNotFoundException($" file missing at: {workplaceJsonPath}");
                     }
                     List<DTOWorkplaceInstance> workplaces = LoadListFromJson<DTOWorkplaceInstance>(workplaceJsonPath);
@@ -146,6 +152,7 @@ namespace MapToolV2.Scripts.Loader.Deserializers
                     string[] jsonFiles = Directory.GetFiles(path, "*.json");
                     foreach (string file in jsonFiles)
                     {
+                        trace.Log($"Deserializing: {file}", MesssageType.info);
                         //Lire json déserializer Tile
                         DTOTile.TileDTO tile = TileLoader.LoadTile(file);
 
@@ -171,7 +178,7 @@ namespace MapToolV2.Scripts.Loader.Deserializers
                     {
                         continue;
                     }
-
+                    trace.Log($"Deserializing: OrphanTiles.json", MesssageType.info);
                     string orphanTiles = File.ReadAllText(filePath);
 
                     List<DTOTile> orphanTile = LoadListFromJson<DTOTile>(orphanTiles);
