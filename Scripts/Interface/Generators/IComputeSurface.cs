@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MapToolV2.Scripts
+namespace MapToolV2.Scripts.Interface.Generators
 {
-    public class DTOCulture
+    public interface IComputeSurface
     {
-        public string tag;
-        public string name;
+        void ComputeSurface();
     }
 }

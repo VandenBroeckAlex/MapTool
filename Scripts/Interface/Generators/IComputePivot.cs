@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MapToolV2.Scripts.Interface
+namespace MapToolV2.Scripts.Interface.Generators
 {
-    public interface IComputeNeighbore
+    public interface IComputePivot
     {
-        void Compute();
+        void ComputePivot();
     }
 }

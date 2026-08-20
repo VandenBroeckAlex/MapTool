@@ -120,11 +120,16 @@ namespace MapToolV2
         {
             string root = textBoxOutputFile.Text;
 
-            if(root != "")
+            if (root != "")
             {
-              CreateRoot cr = new CreateRoot(root);
-              cr.Create();
+                CreateRoot cr = new CreateRoot(root);
+                cr.Create();
             }
+
+        }
+
+        private void textBox16_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

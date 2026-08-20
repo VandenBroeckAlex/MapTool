@@ -1,4 +1,4 @@
-using MapToolV2.Scripts.Interface;
+using MapToolV2.Scripts.Interface.Generators;
 
 namespace MapToolV2.Scripts
 {

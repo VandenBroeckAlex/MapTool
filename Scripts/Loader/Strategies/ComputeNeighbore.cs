@@ -1,4 +1,4 @@
-using MapToolV2.Scripts.Interface;
+using MapToolV2.Scripts.Interface.Generators;
 using System;
 using System.Collections.Generic;
 using System.Linq;

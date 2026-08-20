@@ -1,5 +1,4 @@
-
-namespace A_VDB.Definition
+namespace MapToolV2.Scripts.Form.Models
 {
     public class DefGood
     {

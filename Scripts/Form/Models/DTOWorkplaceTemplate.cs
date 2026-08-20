@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MapToolV2.Scripts.DTO
+namespace MapToolV2.Scripts.Form.Models
 {
     internal class DTOWorkplaceTemplate
     {
