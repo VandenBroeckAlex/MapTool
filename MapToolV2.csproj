@@ -27,9 +27,4 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Scripts\Form\Controler\" />
-    <Folder Include="Scripts\Form\Vue\" />
-  </ItemGroup>
-
 </Project>

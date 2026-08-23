@@ -1,3 +1,4 @@
+using MapToolV2.Scripts.Form.Controler;
 using MapToolV2.Scripts.Form.Models;
 using MapToolV2.Scripts.Form.Traces;
 using MapToolV2.Scripts.Loader.Deserializers;
@@ -33,7 +34,7 @@ namespace MapToolV2.Scripts.Loader
             path = new StringPath(rootfile, _scenario);
         }
 
-        public Registery Deserialize(IDeserializeTrace trace)
+        public Repository Deserialize(IDeserializeTrace trace)
         {
 
             trace.Log("--- Begin deserialization ---", MesssageType.info);
@@ -72,7 +73,7 @@ namespace MapToolV2.Scripts.Loader
 
             DataDeserializer.LoadProvincesData(path.scenario,this, trace);
 
-            Registery registery = new Registery(
+            Repository registery = new Repository(
                needList,
                climateList,
                goodsList,

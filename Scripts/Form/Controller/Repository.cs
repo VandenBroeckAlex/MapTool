@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using MapToolV2.Scripts.Form.Models;
 
-namespace MapToolV2.Scripts
+namespace MapToolV2.Scripts.Form.Controler
 {
-    public class Registery
+    public class Repository
     {
         // Static/Definitions
         public List<DTOStrataNeed> needList { get; private set; }
@@ -24,7 +24,9 @@ namespace MapToolV2.Scripts
         public List<DTOPopulation> populationList { get; private set; }
         public List<DTOWorkplaceInstance> dTOWorkplaces { get; private set; }
   
-        public Registery(
+        //colors
+
+        public Repository(
             List<DTOStrataNeed> needs,
             List<DTOClimateDef> climates,
             List<DefGood> goods,

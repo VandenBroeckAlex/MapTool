@@ -40,3 +40,5 @@ C:\Users\alex.vdbroeck\Documents\DevAlex\MapTool\obj\Debug\net8.0-windows\refint
 C:\Users\alex.vdbroeck\Documents\DevAlex\MapTool\obj\Debug\net8.0-windows\MapToolV2.pdb
 C:\Users\alex.vdbroeck\Documents\DevAlex\MapTool\obj\Debug\net8.0-windows\MapToolV2.genruntimeconfig.cache
 C:\Users\alex.vdbroeck\Documents\DevAlex\MapTool\obj\Debug\net8.0-windows\ref\MapToolV2.dll
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.Scripts.Form.Vue.StaticDataControl.resources
+C:\Users\User\Desktop\map_game_info\tool\MapToolV2\obj\Debug\net8.0-windows\MapToolV2.Scripts.Form.Vue.UserControle.TileDataControl.resources
