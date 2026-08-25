@@ -29,7 +29,7 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
         private void InitializeComponent()
         {
             flowLayoutPanel1 = new FlowLayoutPanel();
-            groupBox3 = new GroupBox();
+            groupBoxSelection = new GroupBox();
             panelSelectedColor = new Panel();
             label9 = new Label();
             button2 = new Button();
@@ -41,7 +41,7 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             textBox1 = new TextBox();
             label7 = new Label();
             label6 = new Label();
-            groupBoxTile = new GroupBox();
+            groupBoxTileData = new GroupBox();
             label25 = new Label();
             comboBox3 = new ComboBox();
             label16 = new Label();
@@ -57,12 +57,7 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             textBoxTileTag = new TextBox();
             label1 = new Label();
             textBoxTileName = new TextBox();
-            groupBox4 = new GroupBox();
-            listView1 = new ListView();
-            HeaderTileName = new ColumnHeader();
-            HeaderTileProvince = new ColumnHeader();
-            HeaderTileCountry = new ColumnHeader();
-            groupBox5 = new GroupBox();
+            groupBoxProvinceData = new GroupBox();
             button4 = new Button();
             label17 = new Label();
             comboBox4 = new ComboBox();
@@ -77,15 +72,15 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             textBox5 = new TextBox();
             label12 = new Label();
             textBox6 = new TextBox();
-            groupBox6 = new GroupBox();
+            groupBoxCountryData = new GroupBox();
             panel5 = new Panel();
             button3 = new Button();
             label14 = new Label();
             textBox7 = new TextBox();
             label15 = new Label();
             textBox8 = new TextBox();
-            panel7 = new Panel();
-            groupBox8 = new GroupBox();
+            panelCration = new Panel();
+            groupBoxCreateCountry = new GroupBox();
             button7 = new Button();
             panel6 = new Panel();
             button6 = new Button();
@@ -93,7 +88,7 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             textBox11 = new TextBox();
             label24 = new Label();
             textBox12 = new TextBox();
-            groupBox7 = new GroupBox();
+            groupBoxCreateProvince = new GroupBox();
             button5 = new Button();
             label19 = new Label();
             comboBox6 = new ComboBox();
@@ -103,53 +98,66 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             textBox9 = new TextBox();
             label22 = new Label();
             textBox10 = new TextBox();
+            groupBox4 = new GroupBox();
+            listView1 = new ListView();
+            HeaderTileName = new ColumnHeader();
+            HeaderTileProvince = new ColumnHeader();
+            HeaderTileCountry = new ColumnHeader();
             splitContainer1 = new SplitContainer();
+            pictureBox1 = new PictureBox();
+            splitContainer2 = new SplitContainer();
             flowLayoutPanel1.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBoxTile.SuspendLayout();
+            groupBoxSelection.SuspendLayout();
+            groupBoxTileData.SuspendLayout();
+            groupBoxProvinceData.SuspendLayout();
+            groupBoxCountryData.SuspendLayout();
+            panelCration.SuspendLayout();
+            groupBoxCreateCountry.SuspendLayout();
+            groupBoxCreateProvince.SuspendLayout();
             groupBox4.SuspendLayout();
-            groupBox5.SuspendLayout();
-            groupBox6.SuspendLayout();
-            panel7.SuspendLayout();
-            groupBox8.SuspendLayout();
-            groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)splitContainer2).BeginInit();
+            splitContainer2.Panel1.SuspendLayout();
+            splitContainer2.Panel2.SuspendLayout();
+            splitContainer2.SuspendLayout();
             SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Controls.Add(groupBox3);
-            flowLayoutPanel1.Controls.Add(groupBoxTile);
-            flowLayoutPanel1.Controls.Add(groupBox4);
-            flowLayoutPanel1.Controls.Add(groupBox5);
-            flowLayoutPanel1.Controls.Add(groupBox6);
-            flowLayoutPanel1.Controls.Add(panel7);
-            flowLayoutPanel1.Location = new Point(3, 4);
+            flowLayoutPanel1.Controls.Add(groupBoxSelection);
+            flowLayoutPanel1.Controls.Add(groupBoxTileData);
+            flowLayoutPanel1.Controls.Add(groupBoxProvinceData);
+            flowLayoutPanel1.Controls.Add(groupBoxCountryData);
+            flowLayoutPanel1.Controls.Add(panelCration);
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1053, 630);
+            flowLayoutPanel1.Size = new Size(806, 577);
             flowLayoutPanel1.TabIndex = 27;
             // 
-            // groupBox3
+            // groupBoxSelection
             // 
-            groupBox3.Controls.Add(panelSelectedColor);
-            groupBox3.Controls.Add(label9);
-            groupBox3.Controls.Add(button2);
-            groupBox3.Controls.Add(textBox4);
-            groupBox3.Controls.Add(label8);
-            groupBox3.Controls.Add(button1);
-            groupBox3.Controls.Add(textBox3);
-            groupBox3.Controls.Add(textBox2);
-            groupBox3.Controls.Add(textBox1);
-            groupBox3.Controls.Add(label7);
-            groupBox3.Controls.Add(label6);
-            groupBox3.Location = new Point(3, 3);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(243, 231);
-            groupBox3.TabIndex = 1;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Selection";
+            groupBoxSelection.Controls.Add(panelSelectedColor);
+            groupBoxSelection.Controls.Add(label9);
+            groupBoxSelection.Controls.Add(button2);
+            groupBoxSelection.Controls.Add(textBox4);
+            groupBoxSelection.Controls.Add(label8);
+            groupBoxSelection.Controls.Add(button1);
+            groupBoxSelection.Controls.Add(textBox3);
+            groupBoxSelection.Controls.Add(textBox2);
+            groupBoxSelection.Controls.Add(textBox1);
+            groupBoxSelection.Controls.Add(label7);
+            groupBoxSelection.Controls.Add(label6);
+            groupBoxSelection.Location = new Point(3, 3);
+            groupBoxSelection.Name = "groupBoxSelection";
+            groupBoxSelection.Size = new Size(243, 231);
+            groupBoxSelection.TabIndex = 1;
+            groupBoxSelection.TabStop = false;
+            groupBoxSelection.Text = "Selection";
             // 
             // panelSelectedColor
             // 
@@ -241,29 +249,29 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             label6.TabIndex = 0;
             label6.Text = "Get By Name :";
             // 
-            // groupBoxTile
+            // groupBoxTileData
             // 
-            groupBoxTile.Controls.Add(label25);
-            groupBoxTile.Controls.Add(comboBox3);
-            groupBoxTile.Controls.Add(label16);
-            groupBoxTile.Controls.Add(label5);
-            groupBoxTile.Controls.Add(comboBoxTileOccupier);
-            groupBoxTile.Controls.Add(checkBoxIsPassable);
-            groupBoxTile.Controls.Add(checkBoxIsLand);
-            groupBoxTile.Controls.Add(comboBoxTileClimate);
-            groupBoxTile.Controls.Add(label4);
-            groupBoxTile.Controls.Add(comboBoxTileType);
-            groupBoxTile.Controls.Add(label3);
-            groupBoxTile.Controls.Add(label2);
-            groupBoxTile.Controls.Add(textBoxTileTag);
-            groupBoxTile.Controls.Add(label1);
-            groupBoxTile.Controls.Add(textBoxTileName);
-            groupBoxTile.Location = new Point(252, 3);
-            groupBoxTile.Name = "groupBoxTile";
-            groupBoxTile.Size = new Size(270, 231);
-            groupBoxTile.TabIndex = 2;
-            groupBoxTile.TabStop = false;
-            groupBoxTile.Text = "Tile Data";
+            groupBoxTileData.Controls.Add(label25);
+            groupBoxTileData.Controls.Add(comboBox3);
+            groupBoxTileData.Controls.Add(label16);
+            groupBoxTileData.Controls.Add(label5);
+            groupBoxTileData.Controls.Add(comboBoxTileOccupier);
+            groupBoxTileData.Controls.Add(checkBoxIsPassable);
+            groupBoxTileData.Controls.Add(checkBoxIsLand);
+            groupBoxTileData.Controls.Add(comboBoxTileClimate);
+            groupBoxTileData.Controls.Add(label4);
+            groupBoxTileData.Controls.Add(comboBoxTileType);
+            groupBoxTileData.Controls.Add(label3);
+            groupBoxTileData.Controls.Add(label2);
+            groupBoxTileData.Controls.Add(textBoxTileTag);
+            groupBoxTileData.Controls.Add(label1);
+            groupBoxTileData.Controls.Add(textBoxTileName);
+            groupBoxTileData.Location = new Point(252, 3);
+            groupBoxTileData.Name = "groupBoxTileData";
+            groupBoxTileData.Size = new Size(270, 231);
+            groupBoxTileData.TabIndex = 2;
+            groupBoxTileData.TabStop = false;
+            groupBoxTileData.Text = "Tile Data";
             // 
             // label25
             // 
@@ -394,63 +402,26 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             textBoxTileName.Size = new Size(97, 23);
             textBoxTileName.TabIndex = 0;
             // 
-            // groupBox4
+            // groupBoxProvinceData
             // 
-            groupBox4.Controls.Add(listView1);
-            groupBox4.Location = new Point(528, 3);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(282, 301);
-            groupBox4.TabIndex = 2;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Tile List";
-            // 
-            // listView1
-            // 
-            listView1.Columns.AddRange(new ColumnHeader[] { HeaderTileName, HeaderTileProvince, HeaderTileCountry });
-            listView1.FullRowSelect = true;
-            listView1.Location = new Point(0, 22);
-            listView1.MultiSelect = false;
-            listView1.Name = "listView1";
-            listView1.Size = new Size(282, 279);
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
-            // 
-            // HeaderTileName
-            // 
-            HeaderTileName.Text = "TileName";
-            HeaderTileName.Width = 100;
-            // 
-            // HeaderTileProvince
-            // 
-            HeaderTileProvince.Text = "Province";
-            HeaderTileProvince.Width = 100;
-            // 
-            // HeaderTileCountry
-            // 
-            HeaderTileCountry.Text = "Country";
-            HeaderTileCountry.Width = 70;
-            // 
-            // groupBox5
-            // 
-            groupBox5.Controls.Add(button4);
-            groupBox5.Controls.Add(label17);
-            groupBox5.Controls.Add(comboBox4);
-            groupBox5.Controls.Add(listView2);
-            groupBox5.Controls.Add(label13);
-            groupBox5.Controls.Add(comboBox2);
-            groupBox5.Controls.Add(label10);
-            groupBox5.Controls.Add(comboBox1);
-            groupBox5.Controls.Add(label11);
-            groupBox5.Controls.Add(textBox5);
-            groupBox5.Controls.Add(label12);
-            groupBox5.Controls.Add(textBox6);
-            groupBox5.Location = new Point(3, 310);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(443, 231);
-            groupBox5.TabIndex = 3;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "Province Data";
+            groupBoxProvinceData.Controls.Add(button4);
+            groupBoxProvinceData.Controls.Add(label17);
+            groupBoxProvinceData.Controls.Add(comboBox4);
+            groupBoxProvinceData.Controls.Add(listView2);
+            groupBoxProvinceData.Controls.Add(label13);
+            groupBoxProvinceData.Controls.Add(comboBox2);
+            groupBoxProvinceData.Controls.Add(label10);
+            groupBoxProvinceData.Controls.Add(comboBox1);
+            groupBoxProvinceData.Controls.Add(label11);
+            groupBoxProvinceData.Controls.Add(textBox5);
+            groupBoxProvinceData.Controls.Add(label12);
+            groupBoxProvinceData.Controls.Add(textBox6);
+            groupBoxProvinceData.Location = new Point(3, 240);
+            groupBoxProvinceData.Name = "groupBoxProvinceData";
+            groupBoxProvinceData.Size = new Size(443, 231);
+            groupBoxProvinceData.TabIndex = 3;
+            groupBoxProvinceData.TabStop = false;
+            groupBoxProvinceData.Text = "Province Data";
             // 
             // button4
             // 
@@ -566,20 +537,20 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             textBox6.Size = new Size(97, 23);
             textBox6.TabIndex = 12;
             // 
-            // groupBox6
+            // groupBoxCountryData
             // 
-            groupBox6.Controls.Add(panel5);
-            groupBox6.Controls.Add(button3);
-            groupBox6.Controls.Add(label14);
-            groupBox6.Controls.Add(textBox7);
-            groupBox6.Controls.Add(label15);
-            groupBox6.Controls.Add(textBox8);
-            groupBox6.Location = new Point(452, 310);
-            groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(268, 231);
-            groupBox6.TabIndex = 4;
-            groupBox6.TabStop = false;
-            groupBox6.Text = "Country Data";
+            groupBoxCountryData.Controls.Add(panel5);
+            groupBoxCountryData.Controls.Add(button3);
+            groupBoxCountryData.Controls.Add(label14);
+            groupBoxCountryData.Controls.Add(textBox7);
+            groupBoxCountryData.Controls.Add(label15);
+            groupBoxCountryData.Controls.Add(textBox8);
+            groupBoxCountryData.Location = new Point(452, 240);
+            groupBoxCountryData.Name = "groupBoxCountryData";
+            groupBoxCountryData.Size = new Size(246, 231);
+            groupBoxCountryData.TabIndex = 4;
+            groupBoxCountryData.TabStop = false;
+            groupBoxCountryData.Text = "Country Data";
             // 
             // panel5
             // 
@@ -630,32 +601,32 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             textBox8.Size = new Size(97, 23);
             textBox8.TabIndex = 16;
             // 
-            // panel7
+            // panelCration
             // 
-            panel7.BackColor = Color.Gainsboro;
-            panel7.Controls.Add(groupBox8);
-            panel7.Controls.Add(groupBox7);
-            panel7.Location = new Point(3, 547);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(335, 285);
-            panel7.TabIndex = 25;
+            panelCration.BackColor = Color.Gainsboro;
+            panelCration.Controls.Add(groupBoxCreateCountry);
+            panelCration.Controls.Add(groupBoxCreateProvince);
+            panelCration.Location = new Point(3, 477);
+            panelCration.Name = "panelCration";
+            panelCration.Size = new Size(335, 285);
+            panelCration.TabIndex = 25;
             // 
-            // groupBox8
+            // groupBoxCreateCountry
             // 
-            groupBox8.BackColor = Color.White;
-            groupBox8.Controls.Add(button7);
-            groupBox8.Controls.Add(panel6);
-            groupBox8.Controls.Add(button6);
-            groupBox8.Controls.Add(label23);
-            groupBox8.Controls.Add(textBox11);
-            groupBox8.Controls.Add(label24);
-            groupBox8.Controls.Add(textBox12);
-            groupBox8.Location = new Point(164, 27);
-            groupBox8.Name = "groupBox8";
-            groupBox8.Size = new Size(161, 231);
-            groupBox8.TabIndex = 22;
-            groupBox8.TabStop = false;
-            groupBox8.Text = "Create New Country";
+            groupBoxCreateCountry.BackColor = Color.White;
+            groupBoxCreateCountry.Controls.Add(button7);
+            groupBoxCreateCountry.Controls.Add(panel6);
+            groupBoxCreateCountry.Controls.Add(button6);
+            groupBoxCreateCountry.Controls.Add(label23);
+            groupBoxCreateCountry.Controls.Add(textBox11);
+            groupBoxCreateCountry.Controls.Add(label24);
+            groupBoxCreateCountry.Controls.Add(textBox12);
+            groupBoxCreateCountry.Location = new Point(164, 27);
+            groupBoxCreateCountry.Name = "groupBoxCreateCountry";
+            groupBoxCreateCountry.Size = new Size(161, 231);
+            groupBoxCreateCountry.TabIndex = 22;
+            groupBoxCreateCountry.TabStop = false;
+            groupBoxCreateCountry.Text = "Create New Country";
             // 
             // button7
             // 
@@ -715,24 +686,24 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             textBox12.Size = new Size(97, 23);
             textBox12.TabIndex = 16;
             // 
-            // groupBox7
+            // groupBoxCreateProvince
             // 
-            groupBox7.BackColor = Color.White;
-            groupBox7.Controls.Add(button5);
-            groupBox7.Controls.Add(label19);
-            groupBox7.Controls.Add(comboBox6);
-            groupBox7.Controls.Add(label20);
-            groupBox7.Controls.Add(comboBox7);
-            groupBox7.Controls.Add(label21);
-            groupBox7.Controls.Add(textBox9);
-            groupBox7.Controls.Add(label22);
-            groupBox7.Controls.Add(textBox10);
-            groupBox7.Location = new Point(7, 27);
-            groupBox7.Name = "groupBox7";
-            groupBox7.Size = new Size(142, 245);
-            groupBox7.TabIndex = 24;
-            groupBox7.TabStop = false;
-            groupBox7.Text = "Create New Province";
+            groupBoxCreateProvince.BackColor = Color.White;
+            groupBoxCreateProvince.Controls.Add(button5);
+            groupBoxCreateProvince.Controls.Add(label19);
+            groupBoxCreateProvince.Controls.Add(comboBox6);
+            groupBoxCreateProvince.Controls.Add(label20);
+            groupBoxCreateProvince.Controls.Add(comboBox7);
+            groupBoxCreateProvince.Controls.Add(label21);
+            groupBoxCreateProvince.Controls.Add(textBox9);
+            groupBoxCreateProvince.Controls.Add(label22);
+            groupBoxCreateProvince.Controls.Add(textBox10);
+            groupBoxCreateProvince.Location = new Point(7, 27);
+            groupBoxCreateProvince.Name = "groupBoxCreateProvince";
+            groupBoxCreateProvince.Size = new Size(142, 245);
+            groupBoxCreateProvince.TabIndex = 24;
+            groupBoxCreateProvince.TabStop = false;
+            groupBoxCreateProvince.Text = "Create New Province";
             // 
             // button5
             // 
@@ -809,6 +780,45 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             textBox10.Size = new Size(97, 23);
             textBox10.TabIndex = 12;
             // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(listView1);
+            groupBox4.Dock = DockStyle.Fill;
+            groupBox4.Location = new Point(0, 0);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(306, 577);
+            groupBox4.TabIndex = 2;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Tile List";
+            // 
+            // listView1
+            // 
+            listView1.Columns.AddRange(new ColumnHeader[] { HeaderTileName, HeaderTileProvince, HeaderTileCountry });
+            listView1.Dock = DockStyle.Fill;
+            listView1.FullRowSelect = true;
+            listView1.Location = new Point(3, 19);
+            listView1.MultiSelect = false;
+            listView1.Name = "listView1";
+            listView1.Size = new Size(300, 555);
+            listView1.TabIndex = 0;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.Details;
+            // 
+            // HeaderTileName
+            // 
+            HeaderTileName.Text = "TileName";
+            HeaderTileName.Width = 100;
+            // 
+            // HeaderTileProvince
+            // 
+            HeaderTileProvince.Text = "Province";
+            HeaderTileProvince.Width = 100;
+            // 
+            // HeaderTileCountry
+            // 
+            HeaderTileCountry.Text = "Country";
+            HeaderTileCountry.Width = 70;
+            // 
             // splitContainer1
             // 
             splitContainer1.Dock = DockStyle.Fill;
@@ -818,10 +828,41 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             // 
             // splitContainer1.Panel1
             // 
-            splitContainer1.Panel1.Controls.Add(flowLayoutPanel1);
-            splitContainer1.Size = new Size(875, 634);
-            splitContainer1.SplitterDistance = 141;
+            splitContainer1.Panel1.Controls.Add(pictureBox1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.Controls.Add(splitContainer2);
+            splitContainer1.Size = new Size(1116, 744);
+            splitContainer1.SplitterDistance = 157;
+            splitContainer1.SplitterWidth = 10;
             splitContainer1.TabIndex = 28;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1116, 157);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // splitContainer2
+            // 
+            splitContainer2.Dock = DockStyle.Fill;
+            splitContainer2.Location = new Point(0, 0);
+            splitContainer2.Name = "splitContainer2";
+            // 
+            // splitContainer2.Panel1
+            // 
+            splitContainer2.Panel1.Controls.Add(flowLayoutPanel1);
+            // 
+            // splitContainer2.Panel2
+            // 
+            splitContainer2.Panel2.Controls.Add(groupBox4);
+            splitContainer2.Size = new Size(1116, 577);
+            splitContainer2.SplitterDistance = 806;
+            splitContainer2.TabIndex = 26;
             // 
             // TileDataControl
             // 
@@ -829,32 +870,38 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(splitContainer1);
             Name = "TileDataControl";
-            Size = new Size(875, 634);
+            Size = new Size(1116, 744);
             flowLayoutPanel1.ResumeLayout(false);
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            groupBoxTile.ResumeLayout(false);
-            groupBoxTile.PerformLayout();
+            groupBoxSelection.ResumeLayout(false);
+            groupBoxSelection.PerformLayout();
+            groupBoxTileData.ResumeLayout(false);
+            groupBoxTileData.PerformLayout();
+            groupBoxProvinceData.ResumeLayout(false);
+            groupBoxProvinceData.PerformLayout();
+            groupBoxCountryData.ResumeLayout(false);
+            groupBoxCountryData.PerformLayout();
+            panelCration.ResumeLayout(false);
+            groupBoxCreateCountry.ResumeLayout(false);
+            groupBoxCreateCountry.PerformLayout();
+            groupBoxCreateProvince.ResumeLayout(false);
+            groupBoxCreateProvince.PerformLayout();
             groupBox4.ResumeLayout(false);
-            groupBox5.ResumeLayout(false);
-            groupBox5.PerformLayout();
-            groupBox6.ResumeLayout(false);
-            groupBox6.PerformLayout();
-            panel7.ResumeLayout(false);
-            groupBox8.ResumeLayout(false);
-            groupBox8.PerformLayout();
-            groupBox7.ResumeLayout(false);
-            groupBox7.PerformLayout();
             splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            splitContainer2.Panel1.ResumeLayout(false);
+            splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer2).EndInit();
+            splitContainer2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private FlowLayoutPanel flowLayoutPanel1;
-        private GroupBox groupBox3;
+        private GroupBox groupBoxSelection;
         private Panel panelSelectedColor;
         private Label label9;
         private Button button2;
@@ -866,7 +913,7 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
         private TextBox textBox1;
         private Label label7;
         private Label label6;
-        private GroupBox groupBoxTile;
+        private GroupBox groupBoxTileData;
         private Label label25;
         private ComboBox comboBox3;
         private Label label16;
@@ -887,7 +934,7 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
         private ColumnHeader HeaderTileName;
         private ColumnHeader HeaderTileProvince;
         private ColumnHeader HeaderTileCountry;
-        private GroupBox groupBox5;
+        private GroupBox groupBoxProvinceData;
         private Button button4;
         private Label label17;
         private ComboBox comboBox4;
@@ -902,15 +949,15 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
         private TextBox textBox5;
         private Label label12;
         private TextBox textBox6;
-        private GroupBox groupBox6;
+        private GroupBox groupBoxCountryData;
         private Panel panel5;
         private Button button3;
         private Label label14;
         private TextBox textBox7;
         private Label label15;
         private TextBox textBox8;
-        private Panel panel7;
-        private GroupBox groupBox8;
+        private Panel panelCration;
+        private GroupBox groupBoxCreateCountry;
         private Button button7;
         private Panel panel6;
         private Button button6;
@@ -918,7 +965,7 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
         private TextBox textBox11;
         private Label label24;
         private TextBox textBox12;
-        private GroupBox groupBox7;
+        private GroupBox groupBoxCreateProvince;
         private Button button5;
         private Label label19;
         private ComboBox comboBox6;
@@ -929,5 +976,7 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
         private Label label22;
         private TextBox textBox10;
         private SplitContainer splitContainer1;
+        private PictureBox pictureBox1;
+        private SplitContainer splitContainer2;
     }
 }

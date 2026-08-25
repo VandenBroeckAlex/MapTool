@@ -4,6 +4,9 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Scripts\Form\Vue\UserControle\ExportDataControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Scripts\Form\Vue\UserControle\StaticDataControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

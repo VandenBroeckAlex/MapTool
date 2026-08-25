@@ -2,13 +2,7 @@ using MapToolV2.Scripts.Form.Models;
 using MapToolV2.Scripts.Form.Traces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Security.Principal;
-using System.Text.Json;
-using System.Threading.Tasks;
+
 
 namespace MapToolV2.Scripts.Loader.Deserializers
 {
@@ -181,7 +175,7 @@ namespace MapToolV2.Scripts.Loader.Deserializers
                     trace.Log($"Deserializing: OrphanTiles.json", MesssageType.info);
                     string orphanTiles = File.ReadAllText(filePath);
 
-                    List<DTOTile> orphanTile = LoadListFromJson<DTOTile>(orphanTiles);
+                    List<DTOTile.TileDTO> orphanTile = LoadListFromJson<DTOTile.TileDTO>(orphanTiles);
                     bootstrap.AddTileList(orphanTile);
                 }
             }

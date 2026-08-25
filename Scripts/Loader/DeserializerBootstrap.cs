@@ -23,7 +23,7 @@ namespace MapToolV2.Scripts.Loader
         // Dynamic Data
         private List<DTOCountry> countryList = new List<DTOCountry>();
         private List<DTOProvince> provinceList = new List<DTOProvince>();
-        private List<DTOTile> tileList = new List<DTOTile>();
+        private List<DTOTile.TileDTO> tileList = new List<DTOTile.TileDTO>();
         private List<DTOPopulation> populationList = new List<DTOPopulation>();
         private List<DTOWorkplaceInstance> workplacesInstance = new List<DTOWorkplaceInstance>();
        
@@ -93,11 +93,11 @@ namespace MapToolV2.Scripts.Loader
         {
             provinceList.Add(province);
         }
-        public void AddTile(DTOTile tile)
+        public void AddTile(DTOTile.TileDTO tile)
         {
             tileList.Add(tile);
         }
-        public void AddTileList(List<DTOTile> tiles)
+        public void AddTileList(List<DTOTile.TileDTO> tiles)
         {
             tileList.AddRange(tiles);
         }

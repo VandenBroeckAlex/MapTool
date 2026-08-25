@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -38,11 +38,7 @@ namespace MapAnalysis
             return Analyze(bitmap, wrapHorizontal, wrapVertical);
         }
 
-        /// <summary>
-        /// Analyzes an already-loaded bitmap. Ignores the alpha channel is NOT assumed:
-        /// two pixels with the same RGB but different alpha are treated as different colors.
-        /// If you want alpha ignored, convert your bitmap to 24bpp before calling this.
-        /// </summary>
+
         public static MapAnalysisResult Analyze(Bitmap bitmap, bool wrapHorizontal, bool wrapVertical)
         {
             int width = bitmap.Width;

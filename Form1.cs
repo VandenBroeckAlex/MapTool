@@ -1,5 +1,7 @@
 using MapAnalysis;
 using MapToolV2.Scripts.Form;
+using MapToolV2.Scripts.Form.Controler;
+using MapToolV2.Scripts.Form.Controller;
 using MapToolV2.Scripts.Form.Traces;
 using MapToolV2.Scripts.Generators;
 using MapToolV2.Scripts.Loader;
@@ -11,6 +13,9 @@ namespace MapToolV2
         public MapTool()
         {
             InitializeComponent();
+            Repository _repo = new Repository();
+
+            ExportDataController exportDataController = new ExportDataController(exportDataControle,_repo);
         }
 
         private void btnSelectFile_Click(object sender, EventArgs e)
@@ -76,8 +81,8 @@ namespace MapToolV2
 
         private void buttonSelectOutputFile_Click(object sender, EventArgs e)
         {
-            folderBrowserDialog.ShowDialog();
-            textBoxOutputFile.Text = folderBrowserDialog.SelectedPath;
+            //folderBrowserDialog.ShowDialog();
+            //textBoxOutputFile.Text = folderBrowserDialog.SelectedPath;
         }
 
         private void checkBoxComputeSurface_CheckedChanged(object sender, EventArgs e)
@@ -116,17 +121,7 @@ namespace MapToolV2
 
         }
 
-        private void btnCreateroot_Click(object sender, EventArgs e)
-        {
-            string root = textBoxOutputFile.Text;
 
-            if (root != "")
-            {
-                CreateRoot cr = new CreateRoot(root);
-                cr.Create();
-            }
-
-        }
 
         private void textBox16_TextChanged(object sender, EventArgs e)
         {

@@ -1,10 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System.Collections.Generic;
 using MapToolV2.Scripts.Form.Models;
 
 namespace MapToolV2.Scripts.Form.Controler
@@ -20,11 +13,25 @@ namespace MapToolV2.Scripts.Form.Controler
         // Dynamic Data
         public List<DTOCountry> countryList { get; private set; }
         public List<DTOProvince> provinceList { get; private set; }
-        public List<DTOTile> tileList { get; private set; }
+        public List<DTOTile.TileDTO> tileList { get; private set; }
         public List<DTOPopulation> populationList { get; private set; }
         public List<DTOWorkplaceInstance> dTOWorkplaces { get; private set; }
-  
+        public List<string> tileColor { get; private set; }
         //colors
+
+        public Repository()
+        {
+            needList = new List<DTOStrataNeed>();
+            climateList = new List<DTOClimateDef>();
+            goodsList = new List<DefGood>();
+            listTerrainType = new List<DTOTerrainType>();
+
+            countryList = new List<DTOCountry>();
+            provinceList = new List<DTOProvince>();
+            tileList = new List<DTOTile.TileDTO>();
+            populationList = new List<DTOPopulation>();
+            dTOWorkplaces = new List<DTOWorkplaceInstance>();
+        }
 
         public Repository(
             List<DTOStrataNeed> needs,
@@ -33,7 +40,7 @@ namespace MapToolV2.Scripts.Form.Controler
             List<DTOTerrainType> terrainTypes,
             List<DTOCountry> countries,
             List<DTOProvince> provinces,
-            List<DTOTile> tiles,
+            List<DTOTile.TileDTO> tiles,
             List<DTOPopulation> populations,
             List<DTOWorkplaceInstance> workplaces
             )
@@ -48,6 +55,19 @@ namespace MapToolV2.Scripts.Form.Controler
             tileList = tiles;
             populationList = populations;
             dTOWorkplaces = workplaces;
+        }
+
+        public string GetProvinceNameByTag(string tag)
+        {
+            DTOProvince province = provinceList.Where(p => p.tag == tag).FirstOrDefault();
+            if (province != null) 
+            {
+                return province.name;
+            }
+            else
+            {
+                return "";
+            }
         }
     }
 }

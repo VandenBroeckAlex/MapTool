@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace MapToolV2.Scripts.Form.Controler
 {
-    internal class StaticDataController
+    internal class StaticDataPresenter
     {
         IStaticDataView _view;
         Repository _repository;
         event EventHandler SaveClicked;
 
-        public StaticDataController(IStaticDataView view, Repository repository) 
+        public StaticDataPresenter(IStaticDataView view, Repository repository) 
         {
             _view = view;
             _repository = repository;

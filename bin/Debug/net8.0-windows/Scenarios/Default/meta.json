@@ -1,0 +1,16 @@
+{
+  "save_name": "",
+  "real_timestamp": "",
+  
+  "game_state": {
+    "current_turn": 0,
+    "current_date": "",
+    "player_country_id": ""
+  },
+  
+  "compatibility": {
+    "game_version": "",
+    "map_id": "",
+    "active_mods": []
+  }
+}

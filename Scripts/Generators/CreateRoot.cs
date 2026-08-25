@@ -1,4 +1,4 @@
-﻿using MapToolV2.Scripts.Loader;
+using MapToolV2.Scripts.Loader;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +16,7 @@ namespace MapToolV2.Scripts.Generators
             sp = new StringPath(rootPath,"Default");
         }
 
+        //check if it exist then create
 
         public void Create()
         {

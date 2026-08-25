@@ -57,17 +57,11 @@ namespace MapToolV2
             btnSelectFile = new Button();
             TabControl = new TabControl();
             tabPage2 = new TabPage();
-            staticDataControl1 = new MapToolV2.Scripts.Form.Vue.StaticDataControl();
             TabControleTile = new TabPage();
-            tileDataControl1 = new MapToolV2.Scripts.Form.Vue.UserControle.TileDataControl();
             tabCountry = new TabPage();
             tabPopulation = new TabPage();
             tabPage1 = new TabPage();
-            btnCreateroot = new Button();
-            groupBox9 = new GroupBox();
-            textBoxOutputFile = new TextBox();
-            buttonSelectOutputFile = new Button();
-            button8 = new Button();
+            exportDataControle = new MapToolV2.Scripts.Form.Vue.UserControle.ExportDataPresenter();
             colorDialog1 = new ColorDialog();
             TabControleLoad.SuspendLayout();
             groupBox10.SuspendLayout();
@@ -77,10 +71,7 @@ namespace MapToolV2
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
             TabControl.SuspendLayout();
-            tabPage2.SuspendLayout();
-            TabControleTile.SuspendLayout();
             tabPage1.SuspendLayout();
-            groupBox9.SuspendLayout();
             SuspendLayout();
             // 
             // TabControleLoad
@@ -91,7 +82,7 @@ namespace MapToolV2
             TabControleLoad.Location = new Point(4, 24);
             TabControleLoad.Name = "TabControleLoad";
             TabControleLoad.Padding = new Padding(3);
-            TabControleLoad.Size = new Size(1053, 876);
+            TabControleLoad.Size = new Size(1069, 854);
             TabControleLoad.TabIndex = 0;
             TabControleLoad.Text = "Load data";
             TabControleLoad.UseVisualStyleBackColor = true;
@@ -385,56 +376,39 @@ namespace MapToolV2
             TabControl.Controls.Add(tabCountry);
             TabControl.Controls.Add(tabPopulation);
             TabControl.Controls.Add(tabPage1);
-            TabControl.Location = new Point(12, 12);
+            TabControl.Dock = DockStyle.Fill;
+            TabControl.Location = new Point(0, 0);
             TabControl.Name = "TabControl";
             TabControl.SelectedIndex = 0;
-            TabControl.Size = new Size(1061, 904);
+            TabControl.Size = new Size(1077, 882);
             TabControl.TabIndex = 0;
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(staticDataControl1);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1053, 876);
+            tabPage2.Size = new Size(1069, 854);
             tabPage2.TabIndex = 6;
             tabPage2.Text = "Static Data";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // staticDataControl1
-            // 
-            staticDataControl1.Dock = DockStyle.Fill;
-            staticDataControl1.Location = new Point(3, 3);
-            staticDataControl1.Name = "staticDataControl1";
-            staticDataControl1.Size = new Size(1047, 870);
-            staticDataControl1.TabIndex = 0;
-            // 
             // TabControleTile
             // 
-            TabControleTile.Controls.Add(tileDataControl1);
             TabControleTile.Location = new Point(4, 24);
             TabControleTile.Name = "TabControleTile";
             TabControleTile.Padding = new Padding(3);
-            TabControleTile.Size = new Size(1053, 876);
+            TabControleTile.Size = new Size(1069, 854);
             TabControleTile.TabIndex = 1;
             TabControleTile.Text = "Tile data";
             TabControleTile.UseVisualStyleBackColor = true;
-            // 
-            // tileDataControl1
-            // 
-            tileDataControl1.Dock = DockStyle.Fill;
-            tileDataControl1.Location = new Point(3, 3);
-            tileDataControl1.Name = "tileDataControl1";
-            tileDataControl1.Size = new Size(1047, 870);
-            tileDataControl1.TabIndex = 0;
             // 
             // tabCountry
             // 
             tabCountry.Location = new Point(4, 24);
             tabCountry.Name = "tabCountry";
             tabCountry.Padding = new Padding(3);
-            tabCountry.Size = new Size(1053, 876);
+            tabCountry.Size = new Size(1069, 854);
             tabCountry.TabIndex = 4;
             tabCountry.Text = "Countries";
             tabCountry.UseVisualStyleBackColor = true;
@@ -444,73 +418,29 @@ namespace MapToolV2
             tabPopulation.Location = new Point(4, 24);
             tabPopulation.Name = "tabPopulation";
             tabPopulation.Padding = new Padding(3);
-            tabPopulation.Size = new Size(1053, 876);
+            tabPopulation.Size = new Size(1069, 854);
             tabPopulation.TabIndex = 5;
             tabPopulation.Text = "Population";
             tabPopulation.UseVisualStyleBackColor = true;
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(btnCreateroot);
-            tabPage1.Controls.Add(groupBox9);
-            tabPage1.Controls.Add(button8);
+            tabPage1.Controls.Add(exportDataControle);
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1053, 876);
+            tabPage1.Size = new Size(1069, 854);
             tabPage1.TabIndex = 3;
             tabPage1.Text = "Export data";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // btnCreateroot
+            // exportDataControle
             // 
-            btnCreateroot.Location = new Point(292, 52);
-            btnCreateroot.Margin = new Padding(3, 2, 3, 2);
-            btnCreateroot.Name = "btnCreateroot";
-            btnCreateroot.Size = new Size(164, 23);
-            btnCreateroot.TabIndex = 5;
-            btnCreateroot.Text = "Create root file";
-            btnCreateroot.UseVisualStyleBackColor = true;
-            btnCreateroot.Click += btnCreateroot_Click;
-            // 
-            // groupBox9
-            // 
-            groupBox9.Controls.Add(textBoxOutputFile);
-            groupBox9.Controls.Add(buttonSelectOutputFile);
-            groupBox9.Location = new Point(6, 23);
-            groupBox9.Name = "groupBox9";
-            groupBox9.Size = new Size(246, 77);
-            groupBox9.TabIndex = 4;
-            groupBox9.TabStop = false;
-            groupBox9.Text = "Select Root Fiile";
-            // 
-            // textBoxOutputFile
-            // 
-            textBoxOutputFile.BorderStyle = BorderStyle.FixedSingle;
-            textBoxOutputFile.Location = new Point(6, 31);
-            textBoxOutputFile.Name = "textBoxOutputFile";
-            textBoxOutputFile.Size = new Size(170, 23);
-            textBoxOutputFile.TabIndex = 1;
-            // 
-            // buttonSelectOutputFile
-            // 
-            buttonSelectOutputFile.FlatStyle = FlatStyle.Flat;
-            buttonSelectOutputFile.Location = new Point(182, 31);
-            buttonSelectOutputFile.Name = "buttonSelectOutputFile";
-            buttonSelectOutputFile.Size = new Size(41, 23);
-            buttonSelectOutputFile.TabIndex = 2;
-            buttonSelectOutputFile.Text = "...";
-            buttonSelectOutputFile.UseVisualStyleBackColor = true;
-            buttonSelectOutputFile.Click += buttonSelectOutputFile_Click;
-            // 
-            // button8
-            // 
-            button8.Location = new Point(6, 106);
-            button8.Name = "button8";
-            button8.Size = new Size(75, 23);
-            button8.TabIndex = 0;
-            button8.Text = "Export Data";
-            button8.UseVisualStyleBackColor = true;
+            exportDataControle.Dock = DockStyle.Fill;
+            exportDataControle.Location = new Point(3, 3);
+            exportDataControle.Name = "exportDataControle";
+            exportDataControle.Size = new Size(1063, 848);
+            exportDataControle.TabIndex = 0;
             // 
             // MapTool
             // 
@@ -533,11 +463,7 @@ namespace MapToolV2
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             TabControl.ResumeLayout(false);
-            tabPage2.ResumeLayout(false);
-            TabControleTile.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
-            groupBox9.ResumeLayout(false);
-            groupBox9.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -566,10 +492,6 @@ namespace MapToolV2
         private RadioButton radioBtnSurfaceAll;
         private ColorDialog colorDialog1;
         private TabPage tabPage1;
-        private GroupBox groupBox9;
-        private TextBox textBoxOutputFile;
-        private Button buttonSelectOutputFile;
-        private Button button8;
         private Label label18;
         private ComboBox comboBoxScenario;
         private Button btnCompute;
@@ -577,11 +499,11 @@ namespace MapToolV2
         private CheckBox checkBoxRightLeft;
         private GroupBox groupBox10;
         private RichTextBox TbTrace;
-        private Button btnCreateroot;
         private TabPage tabCountry;
         private TabPage tabPopulation;
         private TabPage tabPage2;
         private Scripts.Form.Vue.StaticDataControl staticDataControl1;
         private Scripts.Form.Vue.UserControle.TileDataControl tileDataControl1;
+        private Scripts.Form.Vue.UserControle.ExportDataPresenter exportDataControle;
     }
 }
