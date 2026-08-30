@@ -38,28 +38,40 @@ namespace MapToolV2.Scripts.Loader
         {
 
             trace.Log("--- Begin deserialization ---", MesssageType.info);
-
+            //try catch here
             //Get static data
             //Need
             trace.Log("Deserialize: " + Path.Combine(path.gameData, "StrataNeedDef.json"), MesssageType.info);
             needList = DataDeserializer
                .LoadListFromJson<DTOStrataNeed>(
-               Path.Combine(path.gameData, "StrataNeedDef.json")
+               Path.Combine(path.gameData, "StrataNeedDef.json"), 
+               trace
                );
             trace.Log("Deserialize: " + Path.Combine(path.gameData, "ClimateType.json"), MesssageType.info);
             climateList = DataDeserializer
                .LoadListFromJson<DTOClimateDef>(
-               Path.Combine(path.gameData, "ClimateType.json")
+               Path.Combine(path.gameData, "ClimateType.json"),
+               trace
                );
-            trace.Log("Deserialize: " + Path.Combine(path.gameData, "GoodDef.json"), MesssageType.info);
-            goodsList = DataDeserializer
-               .LoadListFromJson<DefGood>(
-               Path.Combine(path.gameData, "GoodDef.json")
-               );
+
+            try
+            {
+                trace.Log("Deserialize: " + Path.Combine(path.gameData, "GoodDef.json"), MesssageType.info);
+                goodsList = DataDeserializer
+                   .LoadListFromJson<DefGood>(
+                   Path.Combine(path.gameData, "GoodDef.json"),
+                   trace
+                   );
+            }
+            catch (Exception ex) 
+            {
+                trace.Log(ex.Message, MesssageType.error);
+            }
             trace.Log("Deserialize: " + Path.Combine(path.gameData, "TerrainTypes.json"), MesssageType.info);
             listTerrainType = DataDeserializer
                 .LoadListFromJson<DTOTerrainType>(
-                Path.Combine(path.gameData,"TerrainTypes.json")
+                Path.Combine(path.gameData,"TerrainTypes.json"),
+                trace
                 );
 
             //Get Scenario data
@@ -68,7 +80,8 @@ namespace MapToolV2.Scripts.Loader
             trace.Log("Deserialize: " + "Countries.json", MesssageType.info);
             countryList = DataDeserializer
                .LoadListFromJson<DTOCountry>(
-               Path.Combine(path.scenario, "Countries.json")
+               Path.Combine(path.scenario, "Countries.json"),
+               trace
                );
 
             DataDeserializer.LoadProvincesData(path.scenario,this, trace);

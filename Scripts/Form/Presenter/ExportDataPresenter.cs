@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace MapToolV2.Scripts.Form.Controller
 {
-    public class ExportDataController
+    public class ExportDataPresenter
     {
         IExportview _view;
         Repository _repository;
 
-        public ExportDataController(IExportview view, Repository repository)
+        public ExportDataPresenter(IExportview view, Repository repository)
         {
             _view = view;
             _repository = repository;
@@ -29,7 +29,7 @@ namespace MapToolV2.Scripts.Form.Controller
             string root = _view.GetRootPath();
             if (root == "")
             {
-                MessageBox.Show("Enter a valid path");
+                MessageBox.Show("Please enter a valid path");
             }
             CreateRoot cr = new CreateRoot(root);
             cr.Create();
@@ -37,12 +37,12 @@ namespace MapToolV2.Scripts.Form.Controller
         }
         private void ExportData(object sender, EventArgs e)
         {
+            //Data export function here
             _view.ShowMessage("Successfully saved!");
         }
 
         private void ChooseRootFile(object sender, EventArgs e)
         {
-            _view.ShowMessage("Rootfile choice cliked");
 
             FolderBrowserDialog folderDialog = new FolderBrowserDialog();
             folderDialog.Description = "Please select a folder for your project files:";

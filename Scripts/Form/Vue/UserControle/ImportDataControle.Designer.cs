@@ -1,14 +1,14 @@
-namespace MapToolV2
+namespace MapToolV2.Scripts.Form.Vue.UserControle
 {
-    partial class MapTool
+    partial class ImportDataControle
     {
-        /// <summary>
-        ///  Required designer variable.
+        /// <summary> 
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
+        /// <summary> 
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -20,16 +20,14 @@ namespace MapToolV2
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            folderBrowserDialog = new FolderBrowserDialog();
-            TabControleLoad = new TabPage();
             groupBox10 = new GroupBox();
             TbTrace = new RichTextBox();
             groupBox2 = new GroupBox();
@@ -40,8 +38,8 @@ namespace MapToolV2
             radioBtnSurfaceDefault = new RadioButton();
             checkBoxComputeSurface = new CheckBox();
             radioBtnSurfaceAll = new RadioButton();
-            checkBox4 = new CheckBox();
-            checkBox3 = new CheckBox();
+            cbRemoveTileWithoutAppColor = new CheckBox();
+            cbcreateTileOrphanColor = new CheckBox();
             panel2 = new Panel();
             radioPivotDefault = new RadioButton();
             checkBoxComputePivot = new CheckBox();
@@ -55,54 +53,32 @@ namespace MapToolV2
             groupBox1 = new GroupBox();
             textBoxFileName = new TextBox();
             btnSelectFile = new Button();
-            TabControl = new TabControl();
-            tabPage2 = new TabPage();
-            TabControleTile = new TabPage();
-            tabCountry = new TabPage();
-            tabPopulation = new TabPage();
-            tabPage1 = new TabPage();
-            exportDataControle = new MapToolV2.Scripts.Form.Vue.UserControle.ExportDataPresenter();
-            tabLoadData = new TabPage();
-            importDataControle = new MapToolV2.Scripts.Form.Vue.UserControle.ImportDataControle();
-            colorDialog1 = new ColorDialog();
-            tileDataControl2 = new MapToolV2.Scripts.Form.Vue.UserControle.TileDataControl();
-            staticDataControl2 = new MapToolV2.Scripts.Form.Vue.StaticDataControl();
-            TabControleLoad.SuspendLayout();
+            splitContainer1 = new SplitContainer();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            flowLayoutPanel2 = new FlowLayoutPanel();
             groupBox10.SuspendLayout();
             groupBox2.SuspendLayout();
             panel4.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
-            TabControl.SuspendLayout();
-            tabPage2.SuspendLayout();
-            TabControleTile.SuspendLayout();
-            tabPage1.SuspendLayout();
-            tabLoadData.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
             SuspendLayout();
-            // 
-            // TabControleLoad
-            // 
-            TabControleLoad.Controls.Add(groupBox10);
-            TabControleLoad.Controls.Add(groupBox2);
-            TabControleLoad.Controls.Add(groupBox1);
-            TabControleLoad.Location = new Point(4, 24);
-            TabControleLoad.Name = "TabControleLoad";
-            TabControleLoad.Padding = new Padding(3);
-            TabControleLoad.Size = new Size(1069, 854);
-            TabControleLoad.TabIndex = 0;
-            TabControleLoad.Text = "Load data";
-            TabControleLoad.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
             groupBox10.Controls.Add(TbTrace);
-            groupBox10.Location = new Point(522, 124);
+            groupBox10.Location = new Point(455, 2);
             groupBox10.Margin = new Padding(3, 2, 3, 2);
             groupBox10.Name = "groupBox10";
             groupBox10.Padding = new Padding(3, 2, 3, 2);
             groupBox10.Size = new Size(332, 384);
-            groupBox10.TabIndex = 5;
+            groupBox10.TabIndex = 8;
             groupBox10.TabStop = false;
             groupBox10.Text = "groupBoxTrace";
             // 
@@ -122,14 +98,14 @@ namespace MapToolV2
             groupBox2.Controls.Add(label18);
             groupBox2.Controls.Add(comboBoxScenario);
             groupBox2.Controls.Add(panel4);
-            groupBox2.Controls.Add(checkBox4);
-            groupBox2.Controls.Add(checkBox3);
+            groupBox2.Controls.Add(cbRemoveTileWithoutAppColor);
+            groupBox2.Controls.Add(cbcreateTileOrphanColor);
             groupBox2.Controls.Add(panel2);
             groupBox2.Controls.Add(panel1);
-            groupBox2.Location = new Point(19, 124);
+            groupBox2.Location = new Point(3, 3);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(446, 384);
-            groupBox2.TabIndex = 4;
+            groupBox2.TabIndex = 7;
             groupBox2.TabStop = false;
             groupBox2.Text = "Loading Options";
             // 
@@ -207,25 +183,25 @@ namespace MapToolV2
             radioBtnSurfaceAll.Text = "All";
             radioBtnSurfaceAll.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // cbRemoveTileWithoutAppColor
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(16, 296);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(266, 19);
-            checkBox4.TabIndex = 6;
-            checkBox4.Text = "Remove tile data whose color is not on image";
-            checkBox4.UseVisualStyleBackColor = true;
+            cbRemoveTileWithoutAppColor.AutoSize = true;
+            cbRemoveTileWithoutAppColor.Location = new Point(16, 296);
+            cbRemoveTileWithoutAppColor.Name = "cbRemoveTileWithoutAppColor";
+            cbRemoveTileWithoutAppColor.Size = new Size(266, 19);
+            cbRemoveTileWithoutAppColor.TabIndex = 6;
+            cbRemoveTileWithoutAppColor.Text = "Remove tile data whose color is not on image";
+            cbRemoveTileWithoutAppColor.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // cbcreateTileOrphanColor
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(16, 271);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(194, 19);
-            checkBox3.TabIndex = 5;
-            checkBox3.Text = "Create tile data for orphan color";
-            checkBox3.UseVisualStyleBackColor = true;
+            cbcreateTileOrphanColor.AutoSize = true;
+            cbcreateTileOrphanColor.Location = new Point(16, 271);
+            cbcreateTileOrphanColor.Name = "cbcreateTileOrphanColor";
+            cbcreateTileOrphanColor.Size = new Size(194, 19);
+            cbcreateTileOrphanColor.TabIndex = 5;
+            cbcreateTileOrphanColor.Text = "Create tile data for orphan color";
+            cbcreateTileOrphanColor.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -349,10 +325,10 @@ namespace MapToolV2
             // 
             groupBox1.Controls.Add(textBoxFileName);
             groupBox1.Controls.Add(btnSelectFile);
-            groupBox1.Location = new Point(20, 32);
+            groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(246, 77);
-            groupBox1.TabIndex = 3;
+            groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Select Root Fiile";
             // 
@@ -361,6 +337,7 @@ namespace MapToolV2
             textBoxFileName.BorderStyle = BorderStyle.FixedSingle;
             textBoxFileName.Location = new Point(6, 31);
             textBoxFileName.Name = "textBoxFileName";
+            textBoxFileName.ReadOnly = true;
             textBoxFileName.Size = new Size(170, 23);
             textBoxFileName.TabIndex = 1;
             // 
@@ -375,127 +352,50 @@ namespace MapToolV2
             btnSelectFile.UseVisualStyleBackColor = true;
             btnSelectFile.Click += btnSelectFile_Click;
             // 
-            // TabControl
+            // splitContainer1
             // 
-            TabControl.Controls.Add(TabControleLoad);
-            TabControl.Controls.Add(tabPage2);
-            TabControl.Controls.Add(TabControleTile);
-            TabControl.Controls.Add(tabCountry);
-            TabControl.Controls.Add(tabPopulation);
-            TabControl.Controls.Add(tabPage1);
-            TabControl.Controls.Add(tabLoadData);
-            TabControl.Dock = DockStyle.Fill;
-            TabControl.Location = new Point(0, 0);
-            TabControl.Name = "TabControl";
-            TabControl.SelectedIndex = 0;
-            TabControl.Size = new Size(1077, 882);
-            TabControl.TabIndex = 0;
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.Location = new Point(0, 0);
+            splitContainer1.Name = "splitContainer1";
+            splitContainer1.Orientation = Orientation.Horizontal;
             // 
-            // tabPage2
+            // splitContainer1.Panel1
             // 
-            tabPage2.Controls.Add(staticDataControl2);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1069, 854);
-            tabPage2.TabIndex = 6;
-            tabPage2.Text = "Static Data";
-            tabPage2.UseVisualStyleBackColor = true;
+            splitContainer1.Panel1.Controls.Add(flowLayoutPanel1);
             // 
-            // TabControleTile
+            // splitContainer1.Panel2
             // 
-            TabControleTile.Controls.Add(tileDataControl2);
-            TabControleTile.Location = new Point(4, 24);
-            TabControleTile.Name = "TabControleTile";
-            TabControleTile.Padding = new Padding(3);
-            TabControleTile.Size = new Size(1069, 854);
-            TabControleTile.TabIndex = 1;
-            TabControleTile.Text = "Tile data";
-            TabControleTile.UseVisualStyleBackColor = true;
+            splitContainer1.Panel2.Controls.Add(flowLayoutPanel2);
+            splitContainer1.Size = new Size(912, 654);
+            splitContainer1.SplitterDistance = 97;
+            splitContainer1.TabIndex = 9;
             // 
-            // tabCountry
+            // flowLayoutPanel1
             // 
-            tabCountry.Location = new Point(4, 24);
-            tabCountry.Name = "tabCountry";
-            tabCountry.Padding = new Padding(3);
-            tabCountry.Size = new Size(1069, 854);
-            tabCountry.TabIndex = 4;
-            tabCountry.Text = "Countries";
-            tabCountry.UseVisualStyleBackColor = true;
+            flowLayoutPanel1.Controls.Add(groupBox1);
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(912, 97);
+            flowLayoutPanel1.TabIndex = 0;
             // 
-            // tabPopulation
+            // flowLayoutPanel2
             // 
-            tabPopulation.Location = new Point(4, 24);
-            tabPopulation.Name = "tabPopulation";
-            tabPopulation.Padding = new Padding(3);
-            tabPopulation.Size = new Size(1069, 854);
-            tabPopulation.TabIndex = 5;
-            tabPopulation.Text = "Population";
-            tabPopulation.UseVisualStyleBackColor = true;
+            flowLayoutPanel2.Controls.Add(groupBox2);
+            flowLayoutPanel2.Controls.Add(groupBox10);
+            flowLayoutPanel2.Dock = DockStyle.Fill;
+            flowLayoutPanel2.Location = new Point(0, 0);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(912, 553);
+            flowLayoutPanel2.TabIndex = 0;
             // 
-            // tabPage1
-            // 
-            tabPage1.Controls.Add(exportDataControle);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1069, 854);
-            tabPage1.TabIndex = 3;
-            tabPage1.Text = "Export data";
-            tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // exportDataControle
-            // 
-            exportDataControle.Dock = DockStyle.Fill;
-            exportDataControle.Location = new Point(3, 3);
-            exportDataControle.Name = "exportDataControle";
-            exportDataControle.Size = new Size(1063, 848);
-            exportDataControle.TabIndex = 0;
-            // 
-            // tabLoadData
-            // 
-            tabLoadData.Controls.Add(importDataControle);
-            tabLoadData.Location = new Point(4, 24);
-            tabLoadData.Name = "tabLoadData";
-            tabLoadData.Padding = new Padding(3);
-            tabLoadData.Size = new Size(1069, 854);
-            tabLoadData.TabIndex = 7;
-            tabLoadData.Text = "Load Data";
-            tabLoadData.UseVisualStyleBackColor = true;
-            // 
-            // importDataControle
-            // 
-            importDataControle.Dock = DockStyle.Fill;
-            importDataControle.Location = new Point(3, 3);
-            importDataControle.Name = "importDataControle";
-            importDataControle.Size = new Size(1063, 848);
-            importDataControle.TabIndex = 0;
-            // 
-            // tileDataControl2
-            // 
-            tileDataControl2.Dock = DockStyle.Fill;
-            tileDataControl2.Location = new Point(3, 3);
-            tileDataControl2.Name = "tileDataControl2";
-            tileDataControl2.Size = new Size(1063, 848);
-            tileDataControl2.TabIndex = 0;
-            // 
-            // staticDataControl2
-            // 
-            staticDataControl2.Dock = DockStyle.Fill;
-            staticDataControl2.Location = new Point(3, 3);
-            staticDataControl2.Name = "staticDataControl2";
-            staticDataControl2.Size = new Size(1063, 848);
-            staticDataControl2.TabIndex = 0;
-            // 
-            // MapTool
+            // ImportDataControle
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1077, 882);
-            Controls.Add(TabControl);
-            Name = "MapTool";
-            Text = "Map Tool";
-            TabControleLoad.ResumeLayout(false);
+            Controls.Add(splitContainer1);
+            Name = "ImportDataControle";
+            Size = new Size(912, 654);
             groupBox10.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
@@ -507,55 +407,44 @@ namespace MapToolV2
             panel1.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            TabControl.ResumeLayout(false);
-            tabPage2.ResumeLayout(false);
-            TabControleTile.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
-            tabLoadData.ResumeLayout(false);
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
-        private FolderBrowserDialog folderBrowserDialog;
-        private TabPage TabControleLoad;
+
+        private GroupBox groupBox10;
+        private RichTextBox TbTrace;
         private GroupBox groupBox2;
-        private CheckBox checkBox4;
-        private CheckBox checkBox3;
+        private Button btnCompute;
+        private Label label18;
+        private ComboBox comboBoxScenario;
+        private Panel panel4;
+        private RadioButton radioBtnSurfaceDefault;
+        private CheckBox checkBoxComputeSurface;
+        private RadioButton radioBtnSurfaceAll;
+        private CheckBox cbRemoveTileWithoutAppColor;
+        private CheckBox cbcreateTileOrphanColor;
         private Panel panel2;
         private RadioButton radioPivotDefault;
         private CheckBox checkBoxComputePivot;
         private RadioButton radioPivotAll;
         private Panel panel1;
+        private CheckBox checkBoxTopBottom;
+        private CheckBox checkBoxRightLeft;
         private RadioButton radioNeighboreDefault;
         private CheckBox checkBoxGetNeighbore;
         private RadioButton radioNeighboreAll;
         private GroupBox groupBox1;
         private TextBox textBoxFileName;
         private Button btnSelectFile;
-        private TabControl TabControl;
-        private TabPage TabControleTile;
-        private Panel panel4;
-        private RadioButton radioBtnSurfaceDefault;
-        private CheckBox checkBoxComputeSurface;
-        private RadioButton radioBtnSurfaceAll;
-        private ColorDialog colorDialog1;
-        private TabPage tabPage1;
-        private Label label18;
-        private ComboBox comboBoxScenario;
-        private Button btnCompute;
-        private CheckBox checkBoxTopBottom;
-        private CheckBox checkBoxRightLeft;
-        private GroupBox groupBox10;
-        private RichTextBox TbTrace;
-        private TabPage tabCountry;
-        private TabPage tabPopulation;
-        private TabPage tabPage2;
-        private Scripts.Form.Vue.StaticDataControl staticDataControl1;
-        private Scripts.Form.Vue.UserControle.TileDataControl tileDataControl1;
-        private Scripts.Form.Vue.UserControle.ExportDataPresenter exportDataControle;
-        private TabPage tabLoadData;
-        private Scripts.Form.Vue.UserControle.ImportDataControle importDataControle;
-        private Scripts.Form.Vue.StaticDataControl staticDataControl2;
-        private Scripts.Form.Vue.UserControle.TileDataControl tileDataControl2;
+        private SplitContainer splitContainer1;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel flowLayoutPanel2;
     }
 }

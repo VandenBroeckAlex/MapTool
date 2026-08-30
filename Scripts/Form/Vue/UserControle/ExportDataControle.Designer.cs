@@ -96,7 +96,7 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             // 
             button8.Location = new Point(425, 3);
             button8.Name = "button8";
-            button8.Size = new Size(75, 23);
+            button8.Size = new Size(76, 23);
             button8.TabIndex = 0;
             button8.Text = "Export Data";
             button8.UseVisualStyleBackColor = true;

@@ -2,6 +2,7 @@ using MapToolV2.Scripts.Form.Models;
 using MapToolV2.Scripts.Form.Traces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Windows.Forms;
 
 
 namespace MapToolV2.Scripts.Loader.Deserializers
@@ -9,11 +10,11 @@ namespace MapToolV2.Scripts.Loader.Deserializers
     class DataDeserializer
     {
         //List<DTOClimateDef> climates = DataDeserializer.LoadListFromJson<DTOClimateDef>("climates.json");
-        public static List<T> LoadListFromJson<T>(string path)
+        public static List<T> LoadListFromJson<T>(string path, IDeserializeTrace trace )
         {
             if (!File.Exists(path))
             {
-                throw new FileNotFoundException($" file missing at: {path}");
+                trace.Log($" file missing at: {path}",MesssageType.error);
             }
             string json = File.ReadAllText(path);
 
@@ -26,19 +27,18 @@ namespace MapToolV2.Scripts.Loader.Deserializers
                 // Explicitly check if the root is an array, method requires List<T>
                 if (token.Type != JTokenType.Array)
                 {
-                    throw new JsonReaderException(
+                    trace.Log(
                         $"Data structure error: Expected a JSON Array '[...]' at the root, " +
                         $"but found a {token.Type}. Check if you forgot the wrapping brackets '[ ]'!"
-                    );
+                    ,MesssageType.error);
                 }
             }
             catch (JsonReaderException ex)
             {
                 // Catch syntax errors (missing commas, broken brackets, bad types)
-                throw new FormatException(
-                    $"Invalid JSON layout detected in file '{Path.GetFileName(path)}'. \nDetails: {ex.Message}",
-                    ex
-                );
+                trace.Log(
+                    $"Invalid JSON layout detected in file '{Path.GetFileName(path)}'. \nDetails: {ex.Message}"
+                ,MesssageType.error);
             }
 
             List<T>? data = JsonConvert.DeserializeObject<List<T>>(json);
@@ -140,7 +140,7 @@ namespace MapToolV2.Scripts.Loader.Deserializers
                         trace.Log($" file missing at: {workplaceJsonPath}", MesssageType.error);
                         throw new FileNotFoundException($" file missing at: {workplaceJsonPath}");
                     }
-                    List<DTOWorkplaceInstance> workplaces = LoadListFromJson<DTOWorkplaceInstance>(workplaceJsonPath);
+                    List<DTOWorkplaceInstance> workplaces = LoadListFromJson<DTOWorkplaceInstance>(workplaceJsonPath, trace);
                     bootstrap.AddWorkplaceList(workplaces);
                     //Pour chaque fichier dans Tile
                     string[] jsonFiles = Directory.GetFiles(path, "*.json");
@@ -175,7 +175,7 @@ namespace MapToolV2.Scripts.Loader.Deserializers
                     trace.Log($"Deserializing: OrphanTiles.json", MesssageType.info);
                     string orphanTiles = File.ReadAllText(filePath);
 
-                    List<DTOTile.TileDTO> orphanTile = LoadListFromJson<DTOTile.TileDTO>(orphanTiles);
+                    List<DTOTile.TileDTO> orphanTile = LoadListFromJson<DTOTile.TileDTO>(orphanTiles, trace);
                     bootstrap.AddTileList(orphanTile);
                 }
             }

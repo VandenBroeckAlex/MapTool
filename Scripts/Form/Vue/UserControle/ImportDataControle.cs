@@ -1,29 +1,32 @@
-using MapAnalysis;
-using MapToolV2.Scripts.Form;
-using MapToolV2.Scripts.Form.Controler;
-using MapToolV2.Scripts.Form.Controller;
 using MapToolV2.Scripts.Form.Presenter;
 using MapToolV2.Scripts.Form.Traces;
-using MapToolV2.Scripts.Generators;
-using MapToolV2.Scripts.Loader;
+using MapToolV2.Scripts.Form.Vue.intefaces;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace MapToolV2
+namespace MapToolV2.Scripts.Form.Vue.UserControle
 {
-    public partial class MapTool : Form
+    public partial class ImportDataControle : UserControl, IImportDataView
     {
-        public MapTool()
+        public ImportDataControle()
         {
             InitializeComponent();
-            Repository _repo = new Repository();
-
-            ExportDataPresenter exportDataController = new ExportDataPresenter(exportDataControle,_repo);
-
-            ImportDataPresenter importDataPresenter = new ImportDataPresenter(importDataControle, _repo);
-
         }
+
+        public event EventHandler ComputeClicked;
 
         private void btnSelectFile_Click(object sender, EventArgs e)
         {
+            
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+
             folderBrowserDialog.ShowDialog();
             textBoxFileName.Text = folderBrowserDialog.SelectedPath;
 
@@ -76,13 +79,6 @@ namespace MapToolV2
                 radioPivotDefault.Enabled = false;
             }
         }
-
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            colorDialog1.ShowDialog();
-        }
-
         private void buttonSelectOutputFile_Click(object sender, EventArgs e)
         {
             //folderBrowserDialog.ShowDialog();
@@ -104,32 +100,29 @@ namespace MapToolV2
             }
         }
 
+
         private void btnCompute_Click(object sender, EventArgs e)
         {
-            //Load
-            string fileRoot = textBoxFileName.Text;
-            string scenarioName = comboBoxScenario.Text;
-            DeserializerBootstrap deserializer = new DeserializerBootstrap(fileRoot, scenarioName);
-            IDeserializeTrace trace = new TraceDeserialize(TbTrace);
-            deserializer.Deserialize(trace);
-
-
-            bool horizontal = checkBoxRightLeft.Checked;
-            bool vertical = checkBoxTopBottom.Checked;
-            MapAnalysisResult mapResult = MapAnalyzer.Analyze(Path.Combine(fileRoot, "Province_Map.png"), horizontal, vertical);
-            //Compute
-
-            trace.Log($"number of detected color: {mapResult.Colors.Count()}", MesssageType.info);
-
-            //RefreshView
+           ComputeClicked?.Invoke(this, EventArgs.Empty);
 
         }
 
-
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
+        public  IDeserializeTrace GetTrace()
         {
+            return new TraceDeserialize(TbTrace);
+        }
 
+        public ComputeChoiceData GetComputeChoices()
+        {
+            ComputeChoiceData ccd = new ComputeChoiceData();
+            ccd.fileRoot = textBoxFileName.Text;
+            ccd.scenarioName = comboBoxScenario.Text;
+            ccd.horizontal = checkBoxRightLeft.Checked;
+            ccd.vertical = checkBoxTopBottom.Checked;
+            ccd.createTileForOrphanColor = cbcreateTileOrphanColor.Checked;
+            ccd.removeTileWithNotAppearingColor = cbRemoveTileWithoutAppColor.Checked;
+            return ccd;
         }
     }
+
 }

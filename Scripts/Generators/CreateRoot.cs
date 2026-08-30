@@ -38,6 +38,10 @@ namespace MapToolV2.Scripts.Generators
             content = "[]";
             File.WriteAllText(path, content);
 
+            path = Path.Combine(sp.gameData, "GoodDef.json");
+            content = "[]";
+            File.WriteAllText(path, content);
+
             path = Path.Combine(sp.gameData, "PopJobDef.json");
             content = "[]";
             File.WriteAllText(path, content);
@@ -68,6 +72,8 @@ namespace MapToolV2.Scripts.Generators
             path = Path.Combine(sp.scenario, "countries.json");
             content = "[]";
             File.WriteAllText(path, content);
+
+      
 
             path = Path.Combine(sp.scenario, "meta.json");
             content = "{\r\n  \"save_name\": \"\",\r\n  \"real_timestamp\": \"\",\r\n  \r\n  \"game_state\": {\r\n    \"current_turn\": 0,\r\n    \"current_date\": \"\",\r\n    \"player_country_id\": \"\"\r\n  },\r\n  \r\n  \"compatibility\": {\r\n    \"game_version\": \"\",\r\n    \"map_id\": \"\",\r\n    \"active_mods\": []\r\n  }\r\n}";

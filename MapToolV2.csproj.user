@@ -7,6 +7,9 @@
     <Compile Update="Scripts\Form\Vue\UserControle\ExportDataControle.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Scripts\Form\Vue\UserControle\ImportDataControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Scripts\Form\Vue\UserControle\StaticDataControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
