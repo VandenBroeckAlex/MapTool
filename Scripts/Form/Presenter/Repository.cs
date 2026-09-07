@@ -9,7 +9,7 @@ namespace MapToolV2.Scripts.Form.Controler
         public List<DTOClimateDef> climateList { get; private set; }
         public List<DefGood> goodsList { get; private set; }
         public List<DTOTerrainType> listTerrainType { get; private set; }
-
+        public List<string> listPopJob { get; private set; }
         // Dynamic Data
         public List<DTOCountry> countryList { get; private set; }
         public List<DTOProvince> provinceList { get; private set; }

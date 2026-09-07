@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +9,18 @@ namespace MapToolV2.Scripts.Form.Vue.intefaces
 {
     internal interface IStaticDataView
     {
-        public void RefreshTerrainType();
-        public void RefreshClimateType();
+        public void RefreshTerrainType(IEnumerable<DTOTerrainType>listTerrainType);
+        public void RefreshClimateType(IEnumerable<DTOClimateDef> listClimateType);
         public void RefreshPopJob();
 
-        public void GetTypedInfoTerrain(string info);
-        public void GetTypedInfoClimate(string info);
+        public string GetTypedInfoTerrain();
+        public DTOTerrainType GetSelectedTerrain();
+        public string GetTypedInfoClimate();
 
-        event EventHandler TerrainAddlicked;
-        string terrainInput {  get; set; }
+
+
+        event EventHandler TerrainAddClicked;
+        event EventHandler ClimateAddClicked;
+        event EventHandler TerrainRemoveClicked;
     }
 }
