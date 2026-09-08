@@ -34,11 +34,11 @@ namespace MapToolV2.Scripts.Form.Vue
         public event EventHandler TerrainAddClicked;
         public event EventHandler TerrainRemoveClicked;
         public event EventHandler ClimateAddClicked;
-
+        public event EventHandler ClimateRemovelicked;
 
         public string GetTypedInfoClimate()
         {
-            return textBoxTerrainType.Text;
+            return textBoxClimateType.Text;
         }
 
         public string GetTypedInfoTerrain()
@@ -67,6 +67,7 @@ namespace MapToolV2.Scripts.Form.Vue
                 listViewClimateType.Items.Add(listViewItem);
             }
             listViewClimateType.Refresh();
+            textBoxClimateType.Clear();
         }
         public void RefreshTerrainType(IEnumerable<DTOTerrainType> listTerrainType)
         {
@@ -115,6 +116,14 @@ namespace MapToolV2.Scripts.Form.Vue
             TerrainRemoveClicked.Invoke(this, EventArgs.Empty);
         }
 
+        private void btnAddClimate_Click(object sender, EventArgs e)
+        {
+            ClimateAddClicked?.Invoke(this, EventArgs.Empty);
+        }
+        private void btnRemoveClimate_Click(Object sender, EventArgs e)
+        {
+            ClimateRemovelicked.Invoke(this, EventArgs.Empty);
+        }
         public DTOTerrainType GetSelectedTerrain()
         {
             var result = listViewTerrain.SelectedItems[0].Tag as DTOTerrainType;
@@ -126,6 +135,20 @@ namespace MapToolV2.Scripts.Form.Vue
             else
             {
                 return new DTOTerrainType();
+            }
+        }
+
+        public DTOClimateDef GetSelectedClimate()
+        {
+            var result = listViewClimateType.SelectedItems[0].Tag as DTOClimateDef;
+
+            if (result is not null)
+            {
+                return result;
+            }
+            else
+            {
+                return new DTOClimateDef();
             }
         }
     }

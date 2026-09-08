@@ -83,6 +83,7 @@ namespace MapToolV2.Scripts.Form.Vue
             button1.TabIndex = 3;
             button1.Text = "Remove";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += btnRemoveClimate_Click;
             // 
             // btnAddClimate
             // 
@@ -93,6 +94,7 @@ namespace MapToolV2.Scripts.Form.Vue
             btnAddClimate.TabIndex = 2;
             btnAddClimate.Text = "Add";
             btnAddClimate.UseVisualStyleBackColor = true;
+            btnAddClimate.Click += btnAddClimate_Click;
             // 
             // textBoxClimateType
             // 

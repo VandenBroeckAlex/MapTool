@@ -20,13 +20,14 @@ namespace MapToolV2.Scripts.Form.Controler
             _view.ClimateAddClicked += AddClimateType;
             _view.TerrainAddClicked += AddTerrainType;
             _view.TerrainRemoveClicked += RemoveTerraintype;
+            _view.ClimateRemovelicked += RemoveClimateType;
         }
 
         public void RefreshViews()
         {
            
             _view.RefreshTerrainType(_repository.listTerrainType);
-            //_view.RefreshClimateType(_repository.climateList);
+            _view.RefreshClimateType(_repository.climateList);
             //_view.RefreshPopJob();
         }
 
@@ -50,6 +51,12 @@ namespace MapToolV2.Scripts.Form.Controler
         {
             MessageBox.Show($"Terrain = {_view.GetSelectedTerrain().name}");
             _repository.listTerrainType.Remove(_view.GetSelectedTerrain());
+            RefreshViews();
+        }
+        public void RemoveClimateType(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Remove climate");
+            _repository.climateList.Remove(_view.GetSelectedClimate());
             RefreshViews();
         }
     }

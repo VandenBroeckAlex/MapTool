@@ -17,10 +17,12 @@ namespace MapToolV2.Scripts.Form.Vue.intefaces
         public DTOTerrainType GetSelectedTerrain();
         public string GetTypedInfoClimate();
 
+        public DTOClimateDef GetSelectedClimate();
 
 
         event EventHandler TerrainAddClicked;
-        event EventHandler ClimateAddClicked;
         event EventHandler TerrainRemoveClicked;
+        event EventHandler ClimateAddClicked;
+        event EventHandler ClimateRemovelicked;
     }
 }

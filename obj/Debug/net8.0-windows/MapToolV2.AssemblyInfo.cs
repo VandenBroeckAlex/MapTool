@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MapToolV2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5de67050d44bd9b7842a932aacffb134f6294de5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91259d8d29d9760651686a4a5e5dc938eb24a2b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("MapToolV2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MapToolV2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
