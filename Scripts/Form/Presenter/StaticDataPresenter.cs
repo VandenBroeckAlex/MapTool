@@ -4,16 +4,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VDBA.GameDataGetter.DTO;
+
+
 
 namespace MapToolV2.Scripts.Form.Controler
 {
     internal class StaticDataPresenter
     {
         IStaticDataView _view;
-        Repository _repository;
+        DTORepository _repository;
         event EventHandler SaveClicked;
 
-        public StaticDataPresenter(IStaticDataView view, Repository repository) 
+        public StaticDataPresenter(IStaticDataView view, DTORepository repository) 
         {
             _view = view;
             _repository = repository;
@@ -21,11 +24,19 @@ namespace MapToolV2.Scripts.Form.Controler
             _view.TerrainAddClicked += AddTerrainType;
             _view.TerrainRemoveClicked += RemoveTerraintype;
             _view.ClimateRemovelicked += RemoveClimateType;
+            _view.RefreshView += RefreshViewsEvent;
         }
 
         public void RefreshViews()
         {
            
+            _view.RefreshTerrainType(_repository.listTerrainType);
+            _view.RefreshClimateType(_repository.climateList);
+            //_view.RefreshPopJob();
+        }
+        public void RefreshViewsEvent(object sender, EventArgs e)
+        {
+
             _view.RefreshTerrainType(_repository.listTerrainType);
             _view.RefreshClimateType(_repository.climateList);
             //_view.RefreshPopJob();

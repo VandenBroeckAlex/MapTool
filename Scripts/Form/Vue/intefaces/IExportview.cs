@@ -9,6 +9,7 @@ namespace MapToolV2.Scripts.Form.Vue.intefaces
     public interface IExportview
     {
         public string GetRootPath();
+        public string GetScenario();
         void ShowMessage(string message);
         void SetPath(string path);
 

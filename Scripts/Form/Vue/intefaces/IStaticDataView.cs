@@ -1,9 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using VDBA.GameDataGetter.DTO;
 
 namespace MapToolV2.Scripts.Form.Vue.intefaces
 {
@@ -24,5 +19,6 @@ namespace MapToolV2.Scripts.Form.Vue.intefaces
         event EventHandler TerrainRemoveClicked;
         event EventHandler ClimateAddClicked;
         event EventHandler ClimateRemovelicked;
+        event EventHandler RefreshView;
     }
 }

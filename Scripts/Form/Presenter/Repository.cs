@@ -1,4 +1,4 @@
-using MapToolV2.Scripts.Form.Models;
+using VDBA.GameDataGetter.DTO;
 
 namespace MapToolV2.Scripts.Form.Controler
 {

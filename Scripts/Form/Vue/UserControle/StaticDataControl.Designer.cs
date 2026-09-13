@@ -176,6 +176,7 @@ namespace MapToolV2.Scripts.Form.Vue
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(1027, 621);
             flowLayoutPanel1.TabIndex = 8;
+            flowLayoutPanel1.VisibleChanged += OnVisibleChange;
             // 
             // StaticDataControl
             // 

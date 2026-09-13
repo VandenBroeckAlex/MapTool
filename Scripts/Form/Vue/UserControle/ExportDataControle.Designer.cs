@@ -30,6 +30,8 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
         {
             flowLayoutPanel1 = new FlowLayoutPanel();
             groupBox9 = new GroupBox();
+            label18 = new Label();
+            comboBoxScenario = new ComboBox();
             textBoxOutputFile = new TextBox();
             buttonSelectOutputFile = new Button();
             btnCreateroot = new Button();
@@ -52,14 +54,33 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             // 
             // groupBox9
             // 
+            groupBox9.Controls.Add(label18);
+            groupBox9.Controls.Add(comboBoxScenario);
             groupBox9.Controls.Add(textBoxOutputFile);
             groupBox9.Controls.Add(buttonSelectOutputFile);
             groupBox9.Location = new Point(3, 3);
             groupBox9.Name = "groupBox9";
-            groupBox9.Size = new Size(246, 77);
+            groupBox9.Size = new Size(246, 151);
             groupBox9.TabIndex = 4;
             groupBox9.TabStop = false;
             groupBox9.Text = "Select Root Fiile";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(6, 75);
+            label18.Name = "label18";
+            label18.Size = new Size(85, 15);
+            label18.TabIndex = 10;
+            label18.Text = "Select scenario";
+            // 
+            // comboBoxScenario
+            // 
+            comboBoxScenario.FormattingEnabled = true;
+            comboBoxScenario.Location = new Point(6, 93);
+            comboBoxScenario.Name = "comboBoxScenario";
+            comboBoxScenario.Size = new Size(121, 23);
+            comboBoxScenario.TabIndex = 9;
             // 
             // textBoxOutputFile
             // 
@@ -100,6 +121,7 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
             button8.TabIndex = 0;
             button8.Text = "Export Data";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // ExportDataPresenter
             // 
@@ -123,5 +145,7 @@ namespace MapToolV2.Scripts.Form.Vue.UserControle
         private Button btnCreateroot;
         private Button button8;
         private FolderBrowserDialog folderBrowserDialog1;
+        private Label label18;
+        private ComboBox comboBoxScenario;
     }
 }

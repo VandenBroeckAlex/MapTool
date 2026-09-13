@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
+using VDBA.GameDataGetter.Interfaces;
 
 namespace MapToolV2.Scripts.Form.Traces
 {
@@ -19,14 +14,14 @@ namespace MapToolV2.Scripts.Form.Traces
         {
             switch (type)
             {
-                case MesssageType.info:
+                case MesssageType.Info:
                     LogMessage(message);
                     break;
 
-                case MesssageType.error:
+                case MesssageType.Error:
                     LogErrorMessage(message);
                     break;
-                case MesssageType.warning:
+                case MesssageType.Warning:
                     LogWarningMessage(message);
                     break;
                 default:

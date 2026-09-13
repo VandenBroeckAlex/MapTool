@@ -1,14 +1,5 @@
 using MapToolV2.Scripts.Form.Vue.intefaces;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using VDBA.GameDataGetter.DTO;
 
 namespace MapToolV2.Scripts.Form.Vue
 {
@@ -35,6 +26,7 @@ namespace MapToolV2.Scripts.Form.Vue
         public event EventHandler TerrainRemoveClicked;
         public event EventHandler ClimateAddClicked;
         public event EventHandler ClimateRemovelicked;
+        public event EventHandler RefreshView;
 
         public string GetTypedInfoClimate()
         {
@@ -122,7 +114,7 @@ namespace MapToolV2.Scripts.Form.Vue
         }
         private void btnRemoveClimate_Click(Object sender, EventArgs e)
         {
-            ClimateRemovelicked.Invoke(this, EventArgs.Empty);
+            ClimateRemovelicked?.Invoke(this, EventArgs.Empty);
         }
         public DTOTerrainType GetSelectedTerrain()
         {
@@ -150,6 +142,11 @@ namespace MapToolV2.Scripts.Form.Vue
             {
                 return new DTOClimateDef();
             }
+        }
+
+        private void OnVisibleChange(object sender, EventArgs e)
+        {
+            RefreshView?.Invoke(this, EventArgs.Empty);
         }
     }
 }

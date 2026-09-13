@@ -1,20 +1,17 @@
-using MapToolV2.Scripts.Form.Controler;
 using MapToolV2.Scripts.Form.Vue.intefaces;
 using MapToolV2.Scripts.Generators;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using VDBA.GameDataGetter;
+using VDBA.GameDataGetter.DTO;
+
 
 namespace MapToolV2.Scripts.Form.Controller
 {
     public class ExportDataPresenter
     {
         IExportview _view;
-        Repository _repository;
+        DTORepository _repository;
 
-        public ExportDataPresenter(IExportview view, Repository repository)
+        public ExportDataPresenter(IExportview view, DTORepository repository)
         {
             _view = view;
             _repository = repository;
@@ -38,7 +35,13 @@ namespace MapToolV2.Scripts.Form.Controller
         private void ExportData(object sender, EventArgs e)
         {
             //Data export function here
+            string root = _view.GetRootPath();
+
             _view.ShowMessage("Successfully saved!");
+
+            
+
+            Serializer.SerializeStaticAndScenario(_repository, root, _view.GetScenario());
         }
 
         private void ChooseRootFile(object sender, EventArgs e)

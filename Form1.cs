@@ -6,6 +6,7 @@ using MapToolV2.Scripts.Form.Presenter;
 using MapToolV2.Scripts.Form.Traces;
 using MapToolV2.Scripts.Generators;
 using MapToolV2.Scripts.Loader;
+using VDBA.GameDataGetter.DTO;
 
 namespace MapToolV2
 {
@@ -14,7 +15,7 @@ namespace MapToolV2
         public MapTool()
         {
             InitializeComponent();
-            Repository _repo = new Repository();
+            DTORepository _repo = new DTORepository();
 
             ExportDataPresenter exportDataController = new ExportDataPresenter(exportDataControle,_repo);
 

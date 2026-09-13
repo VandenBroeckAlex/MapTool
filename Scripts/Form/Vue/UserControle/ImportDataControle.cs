@@ -1,15 +1,7 @@
 using MapToolV2.Scripts.Form.Presenter;
 using MapToolV2.Scripts.Form.Traces;
 using MapToolV2.Scripts.Form.Vue.intefaces;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using VDBA.GameDataGetter.Interfaces;
 
 namespace MapToolV2.Scripts.Form.Vue.UserControle
 {

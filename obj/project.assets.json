@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {
+    "net9.0-windows7.0": {
       "Newtonsoft.Json/13.0.4": {
         "type": "package",
         "compile": {
@@ -13,6 +13,19 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "VDBA.GameDataGetter/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.4"
+        },
+        "compile": {
+          "bin/placeholder/VDBA.GameDataGetter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VDBA.GameDataGetter.dll": {}
         }
       }
     }
@@ -47,11 +60,17 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "VDBA.GameDataGetter/1.0.0": {
+      "type": "project",
+      "path": "../Deserialisation_library/VDBA.GameData/VDBA.GameDataGetter.csproj",
+      "msbuildProject": "../Deserialisation_library/VDBA.GameData/VDBA.GameDataGetter.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": [
-      "Newtonsoft.Json >= 13.0.4"
+    "net9.0-windows7.0": [
+      "Newtonsoft.Json >= 13.0.4",
+      "VDBA.GameDataGetter >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -76,7 +95,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net8.0-windows"
+        "net9.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -84,9 +103,13 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "projectReferences": {
+            "C:\\Users\\User\\Desktop\\map_game_info\\tool\\Deserialisation_library\\VDBA.GameData\\VDBA.GameDataGetter.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\map_game_info\\tool\\Deserialisation_library\\VDBA.GameData\\VDBA.GameDataGetter.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -102,8 +125,8 @@
       "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
-      "net8.0-windows7.0": {
-        "targetAlias": "net8.0-windows",
+      "net9.0-windows7.0": {
+        "targetAlias": "net9.0-windows",
         "dependencies": {
           "Newtonsoft.Json": {
             "target": "Package",

@@ -3,13 +3,11 @@ using MapToolV2.Scripts.Form.Controler;
 using MapToolV2.Scripts.Form.Traces;
 using MapToolV2.Scripts.Form.Vue.intefaces;
 using MapToolV2.Scripts.Loader;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using VDBA.GameDataGetter;
+using VDBA.GameDataGetter.DTO;
+using VDBA.GameDataGetter.Interfaces;
+
+
 
 namespace MapToolV2.Scripts.Form.Presenter
 {
@@ -28,9 +26,10 @@ namespace MapToolV2.Scripts.Form.Presenter
     internal class ImportDataPresenter
     {
         IImportDataView _view;
-        Repository _repo;
+        DTORepository _repo;
 
-        public ImportDataPresenter(IImportDataView dataView,Repository repo)
+
+        public ImportDataPresenter(IImportDataView dataView,DTORepository repo)
         {
             _view = dataView;
             _repo = repo;
@@ -48,19 +47,16 @@ namespace MapToolV2.Scripts.Form.Presenter
             string fileRoot = ccd.fileRoot;
             string scenarioName = ccd.scenarioName;
             DeserializerBootstrap deserializer = new DeserializerBootstrap(fileRoot, scenarioName);
-            deserializer.Deserialize(trace);
-
+            //deserializer.Deserialize(trace);
+            Deserializer.RootDeserialize(fileRoot, scenarioName, _repo, trace);
 
             bool horizontal = ccd.horizontal;
             bool vertical = ccd.vertical;
             MapAnalysisResult mapResult = MapAnalyzer.Analyze(Path.Combine(fileRoot, "Province_Map.png"), horizontal, vertical);
             //Compute
 
-            trace.Log($"number of detected color: {mapResult.Colors.Count()}", MesssageType.info);
-
-            //RefreshView
+            trace.Log($"number of detected color: {mapResult.Colors.Count()}", MesssageType.Info);
 
         }
-
     }
 }

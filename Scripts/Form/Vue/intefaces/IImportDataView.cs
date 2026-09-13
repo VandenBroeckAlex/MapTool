@@ -1,11 +1,5 @@
 using MapToolV2.Scripts.Form.Presenter;
-using MapToolV2.Scripts.Form.Traces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using VDBA.GameDataGetter.Interfaces;
 namespace MapToolV2.Scripts.Form.Vue.intefaces
 {
     public interface IImportDataView
