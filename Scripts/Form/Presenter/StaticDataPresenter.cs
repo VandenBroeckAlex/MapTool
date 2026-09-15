@@ -30,14 +30,14 @@ namespace MapToolV2.Scripts.Form.Controler
         public void RefreshViews()
         {
            
-            _view.RefreshTerrainType(_repository.listTerrainType);
+            _view.RefreshTerrainType(_repository.terrainTypes.GetAll());
             _view.RefreshClimateType(_repository.climateList);
             //_view.RefreshPopJob();
         }
         public void RefreshViewsEvent(object sender, EventArgs e)
         {
 
-            _view.RefreshTerrainType(_repository.listTerrainType);
+            _view.RefreshTerrainType(_repository.terrainTypes.GetAll());
             _view.RefreshClimateType(_repository.climateList);
             //_view.RefreshPopJob();
         }
@@ -47,7 +47,7 @@ namespace MapToolV2.Scripts.Form.Controler
             
             DTOTerrainType terrainType = new DTOTerrainType();
             terrainType.name = _view.GetTypedInfoTerrain(); ;
-            _repository.listTerrainType.Add(terrainType);
+            _repository.terrainTypes.Add(terrainType);
             RefreshViews();
         }
         public void AddClimateType(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace MapToolV2.Scripts.Form.Controler
         public void RemoveTerraintype(object sender, EventArgs e)
         {
             MessageBox.Show($"Terrain = {_view.GetSelectedTerrain().name}");
-            _repository.listTerrainType.Remove(_view.GetSelectedTerrain());
+            _repository.terrainTypes.Remove(_view.GetSelectedTerrain());
             RefreshViews();
         }
         public void RemoveClimateType(object sender, EventArgs e)

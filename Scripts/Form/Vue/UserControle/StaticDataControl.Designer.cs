@@ -35,14 +35,24 @@ namespace MapToolV2.Scripts.Form.Vue
             textBoxClimateType = new TextBox();
             listViewClimateType = new ListView();
             groupBox11 = new GroupBox();
+            dGTerrainType = new DataGridView();
+            TerrainName = new DataGridViewTextBoxColumn();
+            TerrainTag = new DataGridViewTextBoxColumn();
+            IsLand = new DataGridViewCheckBoxColumn();
+            cbIsLand = new CheckBox();
+            groupBoxTag = new GroupBox();
+            textBox1 = new TextBox();
+            groupBox1 = new GroupBox();
+            textBoxTerrainType = new TextBox();
             BtnTerrainRemoveSelect = new Button();
             btnAddTerrain = new Button();
-            textBoxTerrainType = new TextBox();
-            listViewTerrain = new ListView();
             flowLayoutPanel1 = new FlowLayoutPanel();
             groupBox14.SuspendLayout();
             gbClimate.SuspendLayout();
             groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dGTerrainType).BeginInit();
+            groupBoxTag.SuspendLayout();
+            groupBox1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,7 +64,7 @@ namespace MapToolV2.Scripts.Form.Vue
             groupBox14.Margin = new Padding(3, 2, 3, 2);
             groupBox14.Name = "groupBox14";
             groupBox14.Padding = new Padding(3, 2, 3, 2);
-            groupBox14.Size = new Size(543, 366);
+            groupBox14.Size = new Size(1011, 543);
             groupBox14.TabIndex = 6;
             groupBox14.TabStop = false;
             groupBox14.Text = "Tile Data";
@@ -65,7 +75,7 @@ namespace MapToolV2.Scripts.Form.Vue
             gbClimate.Controls.Add(btnAddClimate);
             gbClimate.Controls.Add(textBoxClimateType);
             gbClimate.Controls.Add(listViewClimateType);
-            gbClimate.Location = new Point(269, 40);
+            gbClimate.Location = new Point(573, 40);
             gbClimate.Margin = new Padding(3, 2, 3, 2);
             gbClimate.Name = "gbClimate";
             gbClimate.Padding = new Padding(3, 2, 3, 2);
@@ -115,18 +125,95 @@ namespace MapToolV2.Scripts.Form.Vue
             // 
             // groupBox11
             // 
+            groupBox11.Controls.Add(dGTerrainType);
+            groupBox11.Controls.Add(cbIsLand);
+            groupBox11.Controls.Add(groupBoxTag);
+            groupBox11.Controls.Add(groupBox1);
             groupBox11.Controls.Add(BtnTerrainRemoveSelect);
             groupBox11.Controls.Add(btnAddTerrain);
-            groupBox11.Controls.Add(textBoxTerrainType);
-            groupBox11.Controls.Add(listViewTerrain);
             groupBox11.Location = new Point(20, 40);
             groupBox11.Margin = new Padding(3, 2, 3, 2);
             groupBox11.Name = "groupBox11";
             groupBox11.Padding = new Padding(3, 2, 3, 2);
-            groupBox11.Size = new Size(212, 279);
+            groupBox11.Size = new Size(431, 425);
             groupBox11.TabIndex = 0;
             groupBox11.TabStop = false;
             groupBox11.Text = "Terrain Type";
+            // 
+            // dGTerrainType
+            // 
+            dGTerrainType.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dGTerrainType.Columns.AddRange(new DataGridViewColumn[] { TerrainName, TerrainTag, IsLand });
+            dGTerrainType.Location = new Point(6, 20);
+            dGTerrainType.Name = "dGTerrainType";
+            dGTerrainType.Size = new Size(419, 150);
+            dGTerrainType.TabIndex = 7;
+            // 
+            // TerrainName
+            // 
+            TerrainName.DataPropertyName = "name";
+            TerrainName.HeaderText = "Terrain Name";
+            TerrainName.Name = "TerrainName";
+            // 
+            // TerrainTag
+            // 
+            TerrainTag.DataPropertyName = "tag";
+            TerrainTag.HeaderText = "Terrain Tag";
+            TerrainTag.Name = "TerrainTag";
+            // 
+            // IsLand
+            // 
+            IsLand.DataPropertyName = "isLandType";
+            IsLand.HeaderText = "Is land";
+            IsLand.Name = "IsLand";
+            // 
+            // cbIsLand
+            // 
+            cbIsLand.AutoSize = true;
+            cbIsLand.Checked = true;
+            cbIsLand.CheckState = CheckState.Checked;
+            cbIsLand.Location = new Point(24, 340);
+            cbIsLand.Name = "cbIsLand";
+            cbIsLand.Size = new Size(60, 19);
+            cbIsLand.TabIndex = 6;
+            cbIsLand.Text = "IsLand";
+            cbIsLand.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxTag
+            // 
+            groupBoxTag.Controls.Add(textBox1);
+            groupBoxTag.Location = new Point(18, 268);
+            groupBoxTag.Name = "groupBoxTag";
+            groupBoxTag.Size = new Size(143, 57);
+            groupBoxTag.TabIndex = 5;
+            groupBoxTag.TabStop = false;
+            groupBoxTag.Text = "Tag";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(6, 21);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(127, 23);
+            textBox1.TabIndex = 1;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(textBoxTerrainType);
+            groupBox1.Location = new Point(18, 205);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(143, 57);
+            groupBox1.TabIndex = 4;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Name";
+            // 
+            // textBoxTerrainType
+            // 
+            textBoxTerrainType.Location = new Point(6, 21);
+            textBoxTerrainType.Margin = new Padding(3, 2, 3, 2);
+            textBoxTerrainType.Name = "textBoxTerrainType";
+            textBoxTerrainType.Size = new Size(127, 23);
+            textBoxTerrainType.TabIndex = 1;
             // 
             // BtnTerrainRemoveSelect
             // 
@@ -141,7 +228,7 @@ namespace MapToolV2.Scripts.Form.Vue
             // 
             // btnAddTerrain
             // 
-            btnAddTerrain.Location = new Point(148, 239);
+            btnAddTerrain.Location = new Point(102, 180);
             btnAddTerrain.Margin = new Padding(3, 2, 3, 2);
             btnAddTerrain.Name = "btnAddTerrain";
             btnAddTerrain.Size = new Size(59, 20);
@@ -149,24 +236,6 @@ namespace MapToolV2.Scripts.Form.Vue
             btnAddTerrain.Text = "Add";
             btnAddTerrain.UseVisualStyleBackColor = true;
             btnAddTerrain.Click += btnAddTerrain_Click;
-            // 
-            // textBoxTerrainType
-            // 
-            textBoxTerrainType.Location = new Point(20, 239);
-            textBoxTerrainType.Margin = new Padding(3, 2, 3, 2);
-            textBoxTerrainType.Name = "textBoxTerrainType";
-            textBoxTerrainType.Size = new Size(127, 23);
-            textBoxTerrainType.TabIndex = 1;
-            // 
-            // listViewTerrain
-            // 
-            listViewTerrain.GridLines = true;
-            listViewTerrain.Location = new Point(20, 20);
-            listViewTerrain.Margin = new Padding(3, 2, 3, 2);
-            listViewTerrain.Name = "listViewTerrain";
-            listViewTerrain.Size = new Size(166, 156);
-            listViewTerrain.TabIndex = 0;
-            listViewTerrain.UseCompatibleStateImageBehavior = false;
             // 
             // flowLayoutPanel1
             // 
@@ -190,6 +259,11 @@ namespace MapToolV2.Scripts.Form.Vue
             gbClimate.PerformLayout();
             groupBox11.ResumeLayout(false);
             groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dGTerrainType).EndInit();
+            groupBoxTag.ResumeLayout(false);
+            groupBoxTag.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -200,7 +274,6 @@ namespace MapToolV2.Scripts.Form.Vue
         private GroupBox groupBox11;
         private Button btnAddTerrain;
         private TextBox textBoxTerrainType;
-        private ListView listViewTerrain;
         private FlowLayoutPanel flowLayoutPanel1;
         private GroupBox gbClimate;
         private Button button1;
@@ -208,5 +281,13 @@ namespace MapToolV2.Scripts.Form.Vue
         private TextBox textBoxClimateType;
         private ListView listViewClimateType;
         private Button BtnTerrainRemoveSelect;
+        private GroupBox groupBoxTag;
+        private TextBox textBox1;
+        private GroupBox groupBox1;
+        private CheckBox cbIsLand;
+        private DataGridView dGTerrainType;
+        private DataGridViewTextBoxColumn TerrainName;
+        private DataGridViewTextBoxColumn TerrainTag;
+        private DataGridViewCheckBoxColumn IsLand;
     }
 }

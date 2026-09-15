@@ -29,7 +29,7 @@ namespace MapToolV2.Scripts.Loader
             path = new StringPath(rootfile, _scenario);
         }
 
-        public Repository Deserialize(IDeserializeTrace trace)
+        public DTORepository Deserialize(IDeserializeTrace trace)
         {
 
             trace.Log("--- Begin deserialization ---", MesssageType.Info);
@@ -81,17 +81,17 @@ namespace MapToolV2.Scripts.Loader
 
             DataDeserializer.LoadProvincesData(path.scenario,this, trace);
 
-            Repository registery = new Repository(
-               needList,
-               climateList,
-               goodsList,
-               listTerrainType,
-               countryList,
-               provinceList,
-               tileList,
-               populationList,
-               workplacesInstance
-              );
+            DTORepository registery = new DTORepository();
+            registery.needList = needList;
+            registery.climateList = climateList;
+            registery.goodsList = goodsList;
+            registery.terrainTypes.AddRange(listTerrainType);
+            registery.countryList = countryList;
+            registery.provinceList = provinceList;
+            registery.tileList = tileList;
+            registery.populationList = populationList;
+            //registery.workplaeworkplacesInstance;
+              
 
             return registery;
         }
