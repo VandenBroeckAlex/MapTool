@@ -1,4 +1,5 @@
 using MapToolV2.Scripts.Form.Vue.intefaces;
+using MapToolV2.Scripts.Interface.Presenter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,65 +11,29 @@ using VDBA.GameDataGetter.DTO;
 
 namespace MapToolV2.Scripts.Form.Controler
 {
-    internal class StaticDataPresenter
+    internal class StaticDataPresenter : IPresenterRepo
     {
         IStaticDataView _view;
         DTORepository _repository;
         event EventHandler SaveClicked;
 
-        public StaticDataPresenter(IStaticDataView view, DTORepository repository) 
+        public StaticDataPresenter(IStaticDataView view) 
         {
             _view = view;
-            _repository = repository;
-            _view.ClimateAddClicked += AddClimateType;
-            _view.TerrainAddClicked += AddTerrainType;
-            _view.TerrainRemoveClicked += RemoveTerraintype;
-            _view.ClimateRemovelicked += RemoveClimateType;
-            _view.RefreshView += RefreshViewsEvent;
+            //_repository = repository;
+            //_view.ClimateAddClicked += AddClimateType;
+            //_view.TerrainAddClicked += AddTerrainType;
+            //_view.TerrainRemoveClicked += RemoveTerraintype;
+            //_view.ClimateRemovelicked += RemoveClimateType;
+            //_view.RefreshView += RefreshViewsEvent;
         }
 
-        public void RefreshViews()
+        public void InitializeRepo(DTORepository repo)
         {
-           
-            _view.RefreshTerrainType(_repository.terrainTypes.GetAll());
-            _view.RefreshClimateType(_repository.climateList);
-            //_view.RefreshPopJob();
-        }
-        public void RefreshViewsEvent(object sender, EventArgs e)
-        {
-
-            _view.RefreshTerrainType(_repository.terrainTypes.GetAll());
-            _view.RefreshClimateType(_repository.climateList);
-            //_view.RefreshPopJob();
+            _repository = repo;
+            _view.InitializeRepository(repo);
         }
 
-        public void AddTerrainType(object sender, EventArgs e)
-        {
-            
-            DTOTerrainType terrainType = new DTOTerrainType();
-            terrainType.name = _view.GetTypedInfoTerrain(); ;
-            _repository.terrainTypes.Add(terrainType);
-            RefreshViews();
-        }
-        public void AddClimateType(object sender, EventArgs e)
-        {
-            DTOClimateDef climateType = new DTOClimateDef();
-            climateType.name = _view.GetTypedInfoClimate();
-            _repository.climateList.Add(climateType);
-            RefreshViews();
-        }
-   
-        public void RemoveTerraintype(object sender, EventArgs e)
-        {
-            MessageBox.Show($"Terrain = {_view.GetSelectedTerrain().name}");
-            _repository.terrainTypes.Remove(_view.GetSelectedTerrain());
-            RefreshViews();
-        }
-        public void RemoveClimateType(object sender, EventArgs e)
-        {
-            MessageBox.Show($"Remove climate");
-            _repository.climateList.Remove(_view.GetSelectedClimate());
-            RefreshViews();
-        }
+       
     }
 }

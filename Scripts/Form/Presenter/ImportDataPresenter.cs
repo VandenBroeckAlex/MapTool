@@ -2,6 +2,7 @@ using MapAnalysis;
 using MapToolV2.Scripts.Form.Controler;
 using MapToolV2.Scripts.Form.Traces;
 using MapToolV2.Scripts.Form.Vue.intefaces;
+using MapToolV2.Scripts.Interface.Presenter;
 using MapToolV2.Scripts.Loader;
 using VDBA.GameDataGetter;
 using VDBA.GameDataGetter.DTO;
@@ -27,14 +28,15 @@ namespace MapToolV2.Scripts.Form.Presenter
     {
         IImportDataView _view;
         DTORepository _repo;
+        List<IPresenterRepo> _presenterList;
 
-
-        public ImportDataPresenter(IImportDataView dataView,DTORepository repo)
+        public ImportDataPresenter(IImportDataView dataView,DTORepository repo, List<IPresenterRepo> presenterList )
         {
             _view = dataView;
             _repo = repo;
 
             _view.ComputeClicked += DeserializeData;
+            _presenterList = presenterList;
         }
 
         private void DeserializeData(object sender, EventArgs e)
@@ -57,6 +59,17 @@ namespace MapToolV2.Scripts.Form.Presenter
 
             trace.Log($"number of detected color: {mapResult.Colors.Count()}", MesssageType.Info);
 
+            //TODO guard rails !
+            InitializeRepos();
         }
+
+        private void InitializeRepos()
+        {
+            foreach(IPresenterRepo presenter in _presenterList)
+            {
+                presenter.InitializeRepo(_repo);
+            }
+        }
+
     }
 }

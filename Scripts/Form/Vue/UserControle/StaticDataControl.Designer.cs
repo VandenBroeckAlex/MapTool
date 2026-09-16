@@ -39,11 +39,6 @@ namespace MapToolV2.Scripts.Form.Vue
             TerrainName = new DataGridViewTextBoxColumn();
             TerrainTag = new DataGridViewTextBoxColumn();
             IsLand = new DataGridViewCheckBoxColumn();
-            cbIsLand = new CheckBox();
-            groupBoxTag = new GroupBox();
-            textBox1 = new TextBox();
-            groupBox1 = new GroupBox();
-            textBoxTerrainType = new TextBox();
             BtnTerrainRemoveSelect = new Button();
             btnAddTerrain = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -51,8 +46,6 @@ namespace MapToolV2.Scripts.Form.Vue
             gbClimate.SuspendLayout();
             groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dGTerrainType).BeginInit();
-            groupBoxTag.SuspendLayout();
-            groupBox1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -126,9 +119,6 @@ namespace MapToolV2.Scripts.Form.Vue
             // groupBox11
             // 
             groupBox11.Controls.Add(dGTerrainType);
-            groupBox11.Controls.Add(cbIsLand);
-            groupBox11.Controls.Add(groupBoxTag);
-            groupBox11.Controls.Add(groupBox1);
             groupBox11.Controls.Add(BtnTerrainRemoveSelect);
             groupBox11.Controls.Add(btnAddTerrain);
             groupBox11.Location = new Point(20, 40);
@@ -146,7 +136,7 @@ namespace MapToolV2.Scripts.Form.Vue
             dGTerrainType.Columns.AddRange(new DataGridViewColumn[] { TerrainName, TerrainTag, IsLand });
             dGTerrainType.Location = new Point(6, 20);
             dGTerrainType.Name = "dGTerrainType";
-            dGTerrainType.Size = new Size(419, 150);
+            dGTerrainType.Size = new Size(419, 317);
             dGTerrainType.TabIndex = 7;
             // 
             // TerrainName
@@ -167,57 +157,9 @@ namespace MapToolV2.Scripts.Form.Vue
             IsLand.HeaderText = "Is land";
             IsLand.Name = "IsLand";
             // 
-            // cbIsLand
-            // 
-            cbIsLand.AutoSize = true;
-            cbIsLand.Checked = true;
-            cbIsLand.CheckState = CheckState.Checked;
-            cbIsLand.Location = new Point(24, 340);
-            cbIsLand.Name = "cbIsLand";
-            cbIsLand.Size = new Size(60, 19);
-            cbIsLand.TabIndex = 6;
-            cbIsLand.Text = "IsLand";
-            cbIsLand.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxTag
-            // 
-            groupBoxTag.Controls.Add(textBox1);
-            groupBoxTag.Location = new Point(18, 268);
-            groupBoxTag.Name = "groupBoxTag";
-            groupBoxTag.Size = new Size(143, 57);
-            groupBoxTag.TabIndex = 5;
-            groupBoxTag.TabStop = false;
-            groupBoxTag.Text = "Tag";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(6, 21);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(127, 23);
-            textBox1.TabIndex = 1;
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(textBoxTerrainType);
-            groupBox1.Location = new Point(18, 205);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(143, 57);
-            groupBox1.TabIndex = 4;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Name";
-            // 
-            // textBoxTerrainType
-            // 
-            textBoxTerrainType.Location = new Point(6, 21);
-            textBoxTerrainType.Margin = new Padding(3, 2, 3, 2);
-            textBoxTerrainType.Name = "textBoxTerrainType";
-            textBoxTerrainType.Size = new Size(127, 23);
-            textBoxTerrainType.TabIndex = 1;
-            // 
             // BtnTerrainRemoveSelect
             // 
-            BtnTerrainRemoveSelect.Location = new Point(20, 180);
+            BtnTerrainRemoveSelect.Location = new Point(6, 354);
             BtnTerrainRemoveSelect.Margin = new Padding(3, 2, 3, 2);
             BtnTerrainRemoveSelect.Name = "BtnTerrainRemoveSelect";
             BtnTerrainRemoveSelect.Size = new Size(59, 20);
@@ -228,7 +170,7 @@ namespace MapToolV2.Scripts.Form.Vue
             // 
             // btnAddTerrain
             // 
-            btnAddTerrain.Location = new Point(102, 180);
+            btnAddTerrain.Location = new Point(88, 354);
             btnAddTerrain.Margin = new Padding(3, 2, 3, 2);
             btnAddTerrain.Name = "btnAddTerrain";
             btnAddTerrain.Size = new Size(59, 20);
@@ -258,12 +200,7 @@ namespace MapToolV2.Scripts.Form.Vue
             gbClimate.ResumeLayout(false);
             gbClimate.PerformLayout();
             groupBox11.ResumeLayout(false);
-            groupBox11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dGTerrainType).EndInit();
-            groupBoxTag.ResumeLayout(false);
-            groupBoxTag.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
             flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -273,7 +210,6 @@ namespace MapToolV2.Scripts.Form.Vue
         private GroupBox groupBox14;
         private GroupBox groupBox11;
         private Button btnAddTerrain;
-        private TextBox textBoxTerrainType;
         private FlowLayoutPanel flowLayoutPanel1;
         private GroupBox gbClimate;
         private Button button1;
@@ -281,10 +217,6 @@ namespace MapToolV2.Scripts.Form.Vue
         private TextBox textBoxClimateType;
         private ListView listViewClimateType;
         private Button BtnTerrainRemoveSelect;
-        private GroupBox groupBoxTag;
-        private TextBox textBox1;
-        private GroupBox groupBox1;
-        private CheckBox cbIsLand;
         private DataGridView dGTerrainType;
         private DataGridViewTextBoxColumn TerrainName;
         private DataGridViewTextBoxColumn TerrainTag;
