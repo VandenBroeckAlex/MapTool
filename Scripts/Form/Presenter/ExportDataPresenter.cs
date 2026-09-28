@@ -37,7 +37,7 @@ namespace MapToolV2.Scripts.Form.Controller
             //Data export function here
             string root = _view.GetRootPath();
 
-            _view.ShowMessage("Successfully saved!");
+           
 
             
 

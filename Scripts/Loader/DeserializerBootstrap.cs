@@ -11,7 +11,7 @@ namespace MapToolV2.Scripts.Loader
 
         private StringPath path;
         private List<DTOStrataNeed> needList;
-        private List<DTOClimateDef> climateList;
+        private List<DTOClimateType> climateList;
         private List<DefGood> goodsList;
         private List<DTOTerrainType> listTerrainType;
 
@@ -44,7 +44,7 @@ namespace MapToolV2.Scripts.Loader
                );
             trace.Log("Deserialize: " + Path.Combine(path.gameData, "ClimateType.json"), MesssageType.Info);
             climateList = DataDeserializer
-               .LoadListFromJson<DTOClimateDef>(
+               .LoadListFromJson<DTOClimateType>(
                Path.Combine(path.gameData, "ClimateType.json"),
                trace
                );
@@ -83,7 +83,7 @@ namespace MapToolV2.Scripts.Loader
 
             DTORepository registery = new DTORepository();
             registery.needList = needList;
-            registery.climateList = climateList;
+            registery.climateTypes.AddRange(climateList);
             registery.goodsList = goodsList;
             registery.terrainTypes.AddRange(listTerrainType);
             registery.countryList = countryList;

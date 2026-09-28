@@ -29,155 +29,32 @@ namespace MapToolV2.Scripts.Form.Vue
         private void InitializeComponent()
         {
             groupBox14 = new GroupBox();
-            gbClimate = new GroupBox();
-            button1 = new Button();
-            btnAddClimate = new Button();
-            textBoxClimateType = new TextBox();
-            listViewClimateType = new ListView();
-            groupBox11 = new GroupBox();
-            dGTerrainType = new DataGridView();
-            TerrainName = new DataGridViewTextBoxColumn();
-            TerrainTag = new DataGridViewTextBoxColumn();
-            IsLand = new DataGridViewCheckBoxColumn();
-            BtnTerrainRemoveSelect = new Button();
-            btnAddTerrain = new Button();
+            simpleGridTerrain = new MapToolV2.Scripts.Form.UIElement.SimpleGridUserControle();
             flowLayoutPanel1 = new FlowLayoutPanel();
+            ClimateGrid = new MapToolV2.Scripts.Form.UIElement.SimpleGridUserControle();
             groupBox14.SuspendLayout();
-            gbClimate.SuspendLayout();
-            groupBox11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dGTerrainType).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox14
             // 
-            groupBox14.Controls.Add(gbClimate);
-            groupBox14.Controls.Add(groupBox11);
+            groupBox14.Controls.Add(ClimateGrid);
+            groupBox14.Controls.Add(simpleGridTerrain);
             groupBox14.Location = new Point(3, 2);
             groupBox14.Margin = new Padding(3, 2, 3, 2);
             groupBox14.Name = "groupBox14";
             groupBox14.Padding = new Padding(3, 2, 3, 2);
-            groupBox14.Size = new Size(1011, 543);
+            groupBox14.Size = new Size(1021, 543);
             groupBox14.TabIndex = 6;
             groupBox14.TabStop = false;
-            groupBox14.Text = "Tile Data";
+            groupBox14.Text = "Static Data";
             // 
-            // gbClimate
+            // simpleGridTerrain
             // 
-            gbClimate.Controls.Add(button1);
-            gbClimate.Controls.Add(btnAddClimate);
-            gbClimate.Controls.Add(textBoxClimateType);
-            gbClimate.Controls.Add(listViewClimateType);
-            gbClimate.Location = new Point(573, 40);
-            gbClimate.Margin = new Padding(3, 2, 3, 2);
-            gbClimate.Name = "gbClimate";
-            gbClimate.Padding = new Padding(3, 2, 3, 2);
-            gbClimate.Size = new Size(212, 279);
-            gbClimate.TabIndex = 4;
-            gbClimate.TabStop = false;
-            gbClimate.Text = "Climate Types";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(20, 180);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(59, 20);
-            button1.TabIndex = 3;
-            button1.Text = "Remove";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += btnRemoveClimate_Click;
-            // 
-            // btnAddClimate
-            // 
-            btnAddClimate.Location = new Point(148, 239);
-            btnAddClimate.Margin = new Padding(3, 2, 3, 2);
-            btnAddClimate.Name = "btnAddClimate";
-            btnAddClimate.Size = new Size(59, 20);
-            btnAddClimate.TabIndex = 2;
-            btnAddClimate.Text = "Add";
-            btnAddClimate.UseVisualStyleBackColor = true;
-            btnAddClimate.Click += btnAddClimate_Click;
-            // 
-            // textBoxClimateType
-            // 
-            textBoxClimateType.Location = new Point(20, 239);
-            textBoxClimateType.Margin = new Padding(3, 2, 3, 2);
-            textBoxClimateType.Name = "textBoxClimateType";
-            textBoxClimateType.Size = new Size(127, 23);
-            textBoxClimateType.TabIndex = 1;
-            // 
-            // listViewClimateType
-            // 
-            listViewClimateType.Location = new Point(20, 20);
-            listViewClimateType.Margin = new Padding(3, 2, 3, 2);
-            listViewClimateType.Name = "listViewClimateType";
-            listViewClimateType.Size = new Size(166, 156);
-            listViewClimateType.TabIndex = 0;
-            listViewClimateType.UseCompatibleStateImageBehavior = false;
-            // 
-            // groupBox11
-            // 
-            groupBox11.Controls.Add(dGTerrainType);
-            groupBox11.Controls.Add(BtnTerrainRemoveSelect);
-            groupBox11.Controls.Add(btnAddTerrain);
-            groupBox11.Location = new Point(20, 40);
-            groupBox11.Margin = new Padding(3, 2, 3, 2);
-            groupBox11.Name = "groupBox11";
-            groupBox11.Padding = new Padding(3, 2, 3, 2);
-            groupBox11.Size = new Size(431, 425);
-            groupBox11.TabIndex = 0;
-            groupBox11.TabStop = false;
-            groupBox11.Text = "Terrain Type";
-            // 
-            // dGTerrainType
-            // 
-            dGTerrainType.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dGTerrainType.Columns.AddRange(new DataGridViewColumn[] { TerrainName, TerrainTag, IsLand });
-            dGTerrainType.Location = new Point(6, 20);
-            dGTerrainType.Name = "dGTerrainType";
-            dGTerrainType.Size = new Size(419, 317);
-            dGTerrainType.TabIndex = 7;
-            // 
-            // TerrainName
-            // 
-            TerrainName.DataPropertyName = "name";
-            TerrainName.HeaderText = "Terrain Name";
-            TerrainName.Name = "TerrainName";
-            // 
-            // TerrainTag
-            // 
-            TerrainTag.DataPropertyName = "tag";
-            TerrainTag.HeaderText = "Terrain Tag";
-            TerrainTag.Name = "TerrainTag";
-            // 
-            // IsLand
-            // 
-            IsLand.DataPropertyName = "isLandType";
-            IsLand.HeaderText = "Is land";
-            IsLand.Name = "IsLand";
-            // 
-            // BtnTerrainRemoveSelect
-            // 
-            BtnTerrainRemoveSelect.Location = new Point(6, 354);
-            BtnTerrainRemoveSelect.Margin = new Padding(3, 2, 3, 2);
-            BtnTerrainRemoveSelect.Name = "BtnTerrainRemoveSelect";
-            BtnTerrainRemoveSelect.Size = new Size(59, 20);
-            BtnTerrainRemoveSelect.TabIndex = 3;
-            BtnTerrainRemoveSelect.Text = "Remove";
-            BtnTerrainRemoveSelect.UseVisualStyleBackColor = true;
-            BtnTerrainRemoveSelect.Click += btnRemoveTerrain_Click;
-            // 
-            // btnAddTerrain
-            // 
-            btnAddTerrain.Location = new Point(88, 354);
-            btnAddTerrain.Margin = new Padding(3, 2, 3, 2);
-            btnAddTerrain.Name = "btnAddTerrain";
-            btnAddTerrain.Size = new Size(59, 20);
-            btnAddTerrain.TabIndex = 2;
-            btnAddTerrain.Text = "Add";
-            btnAddTerrain.UseVisualStyleBackColor = true;
-            btnAddTerrain.Click += btnAddTerrain_Click;
+            simpleGridTerrain.Location = new Point(6, 32);
+            simpleGridTerrain.Name = "simpleGridTerrain";
+            simpleGridTerrain.Size = new Size(497, 447);
+            simpleGridTerrain.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
@@ -189,6 +66,13 @@ namespace MapToolV2.Scripts.Form.Vue
             flowLayoutPanel1.TabIndex = 8;
             flowLayoutPanel1.VisibleChanged += OnVisibleChange;
             // 
+            // ClimateGrid
+            // 
+            ClimateGrid.Location = new Point(509, 32);
+            ClimateGrid.Name = "ClimateGrid";
+            ClimateGrid.Size = new Size(403, 447);
+            ClimateGrid.TabIndex = 2;
+            // 
             // StaticDataControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -197,10 +81,6 @@ namespace MapToolV2.Scripts.Form.Vue
             Name = "StaticDataControl";
             Size = new Size(1027, 621);
             groupBox14.ResumeLayout(false);
-            gbClimate.ResumeLayout(false);
-            gbClimate.PerformLayout();
-            groupBox11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dGTerrainType).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -208,18 +88,9 @@ namespace MapToolV2.Scripts.Form.Vue
         #endregion
 
         private GroupBox groupBox14;
-        private GroupBox groupBox11;
-        private Button btnAddTerrain;
         private FlowLayoutPanel flowLayoutPanel1;
-        private GroupBox gbClimate;
-        private Button button1;
-        private Button btnAddClimate;
-        private TextBox textBoxClimateType;
-        private ListView listViewClimateType;
-        private Button BtnTerrainRemoveSelect;
-        private DataGridView dGTerrainType;
-        private DataGridViewTextBoxColumn TerrainName;
-        private DataGridViewTextBoxColumn TerrainTag;
-        private DataGridViewCheckBoxColumn IsLand;
+        private UIElement.SimpleGridUserControle simpleGridUC;
+        private UIElement.SimpleGridUserControle simpleGridTerrain;
+        private UIElement.SimpleGridUserControle ClimateGrid;
     }
 }

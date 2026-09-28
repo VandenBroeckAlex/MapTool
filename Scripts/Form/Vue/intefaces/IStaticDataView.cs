@@ -1,3 +1,4 @@
+using MapToolV2.Scripts.Form.UIElement.Interfaces;
 using VDBA.GameDataGetter.DTO;
 
 namespace MapToolV2.Scripts.Form.Vue.intefaces
@@ -6,11 +7,9 @@ namespace MapToolV2.Scripts.Form.Vue.intefaces
     {
         public void InitializeRepository(DTORepository repository);
 
-
-        event EventHandler TerrainAddClicked;
-        event EventHandler TerrainRemoveClicked;
-        event EventHandler ClimateAddClicked;
-        event EventHandler ClimateRemovelicked;
         event EventHandler RefreshView;
+
+        public ISimpleGrid simpleTerrainGrid {  get; set; }
+        public ISimpleGrid climateGrid { get; set; }
     }
 }
